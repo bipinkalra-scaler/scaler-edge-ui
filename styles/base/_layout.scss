@@ -1,0 +1,13 @@
+$border-radius: 0.4rem;
+
+$header-z: 9;
+
+$backdrop-z: 96;
+$modal-z: 97;
+$toast-z: 98;
+$snackbar-z: 98;
+// Should ideally have highest z of all components as it should be visible over
+// all other components
+$popover-z: 99;
+
+$header-height: 7.2rem;

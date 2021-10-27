@@ -1,0 +1,3561 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,600,800&display=swap");
+@font-face {
+  font-family: 'SR Icons';
+  src: url("../fonts/sr-icons.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block; }
+/* stylelint-disable */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0; }
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block; }
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent; }
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible; }
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; }
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em; }
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline; }
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block; }
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item; }
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none; }
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+  html * {
+    box-sizing: inherit; }
+  html[data-hide-scroll="true"] {
+    overflow: hidden; }
+
+html,
+body,
+#root,
+.react-root {
+  height: 100%; }
+
+.react-root--auto {
+  height: auto; }
+
+body {
+  color: #515151;
+  font-family: "Nunito", "Roboto", "Arial", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  letter-spacing: 0.01rem;
+  line-height: 1.4; }
+
+p {
+  margin: 0;
+  margin-bottom: 1rem; }
+
+a {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none; }
+  a:visited, a:hover, a:active {
+    text-decoration: none; }
+
+button {
+  border: none;
+  box-shadow: none;
+  outline: none; }
+  button:hover, button:focus, button:active {
+    outline: none;
+    box-shadow: none; }
+
+@keyframes indeterminate {
+  0% {
+    left: 0%; }
+  100% {
+    left: -100%; } }
+@keyframes shimmer {
+  0% {
+    background-position: -48rem 0; }
+  100% {
+    background-position: 48rem 0; } }
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); }
+  50% {
+    transform: rotate(180deg); }
+  100% {
+    transform: rotate(360deg); } }
+@keyframes blink {
+  0%, 25%, 75%, 100% {
+    opacity: 1; }
+  50% {
+    opacity: 0; } }
+.anim-blink {
+  animation: 1440ms linear 0s infinite running blink; }
+  .anim-blink--slow {
+    animation-duration: 4096ms; }
+
+.react-root .tappable {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 auto;
+  cursor: pointer; }
+  .react-root .tappable:hover {
+    background: rgba(1, 1, 1, 0.1); }
+  .react-root .tappable:active {
+    background: rgba(1, 1, 1, 0.2); }
+  .react-root .tappable.disabled {
+    pointer-events: none;
+    opacity: 0.7;
+    filter: grayscale(0.5); }
+    .react-root .tappable.disabled.btn-tooltip {
+      pointer-events: unset; }
+  .react-root .tappable.no-highlight:hover, .react-root .tappable.no-highlight:active {
+    background: transparent; }
+.react-root .btn {
+  padding: 1rem;
+  line-height: normal;
+  border-radius: 0.4rem;
+  background-color: #dcdcdc; }
+.react-root .btn-default {
+  color: #515151; }
+  .react-root .btn-default:hover, .react-root .btn-default:active {
+    background-color: #dcdcdc; }
+.react-root .btn-light {
+  background-color: transparent;
+  color: #ffffff; }
+.react-root .btn-dark {
+  background-color: transparent;
+  color: #000000; }
+.react-root .btn-primary {
+  background: #1a84ff;
+  color: #ffffff; }
+  .react-root .btn-primary:hover {
+    background: #3492ff;
+    color: #ffffff; }
+  .react-root .btn-primary:active {
+    background: #0176ff; }
+.react-root .btn-secondary {
+  background: #e23f5b;
+  color: #ffffff; }
+  .react-root .btn-secondary:hover {
+    background: #e5556e;
+    color: #ffffff; }
+  .react-root .btn-secondary:active {
+    background: #df2948; }
+.react-root .btn-success {
+  background: #4bca5e;
+  color: #ffffff; }
+  .react-root .btn-success:hover {
+    background: #5fd070; }
+  .react-root .btn-success:active {
+    background: #39c24e; }
+.react-root .btn-danger {
+  background: #ff001f;
+  color: #ffffff; }
+  .react-root .btn-danger:hover {
+    background: #cc0019; }
+  .react-root .btn-danger:active {
+    background: #b30016; }
+.react-root .btn-warning {
+  background: #ffae42;
+  color: #ffffff; }
+  .react-root .btn-warning:hover {
+    background: #ffb95c; }
+  .react-root .btn-warning:active {
+    background: #ffa329; }
+.react-root .btn-inverted {
+  background: none !important;
+  color: #515151; }
+  .react-root .btn-inverted:hover {
+    background: rgba(1, 1, 1, 0.1) !important;
+    color: #515151; }
+  .react-root .btn-inverted:active {
+    color: #515151; }
+  .react-root .btn-inverted.btn-primary {
+    color: #1a84ff; }
+    .react-root .btn-inverted.btn-primary:hover {
+      color: #1a84ff; }
+    .react-root .btn-inverted.btn-primary:active {
+      color: #0176ff; }
+  .react-root .btn-inverted.btn-secondary {
+    color: #e23f5b; }
+    .react-root .btn-inverted.btn-secondary:hover {
+      color: #e23f5b; }
+    .react-root .btn-inverted.btn-secondary:active {
+      color: #df2948; }
+  .react-root .btn-inverted.btn-success {
+    color: #4bca5e; }
+    .react-root .btn-inverted.btn-success:hover {
+      color: #5fd070; }
+    .react-root .btn-inverted.btn-success:active {
+      color: #39c24e; }
+  .react-root .btn-inverted.btn-danger {
+    color: #ff001f; }
+    .react-root .btn-inverted.btn-danger:hover {
+      color: #cc0019; }
+    .react-root .btn-inverted.btn-danger:active {
+      color: #b30016; }
+.react-root .btn-outlined {
+  background-color: transparent;
+  border: 0.1rem solid #515151;
+  color: #515151; }
+  .react-root .btn-outlined:hover {
+    background: rgba(0, 0, 0, 0.05) !important; }
+  .react-root .btn-outlined:active {
+    background: rgba(0, 0, 0, 0.05) !important; }
+  .react-root .btn-outlined.btn-primary {
+    color: #1a84ff;
+    border-color: #1a84ff; }
+    .react-root .btn-outlined.btn-primary:hover {
+      border-color: #3492ff; }
+    .react-root .btn-outlined.btn-primary:active {
+      border-color: #0176ff; }
+  .react-root .btn-outlined.btn-secondary {
+    color: #e23f5b;
+    border-color: #e23f5b; }
+    .react-root .btn-outlined.btn-secondary:hover {
+      border-color: #e5556e; }
+    .react-root .btn-outlined.btn-secondary:active {
+      border-color: #df2948; }
+  .react-root .btn-outlined.btn-success {
+    color: #4bca5e;
+    border-color: #4bca5e; }
+    .react-root .btn-outlined.btn-success:hover {
+      border-color: #5fd070; }
+    .react-root .btn-outlined.btn-success:active {
+      border-color: #39c24e; }
+  .react-root .btn-outlined.btn-danger {
+    color: #ff001f;
+    border-color: #ff001f; }
+    .react-root .btn-outlined.btn-danger:hover {
+      border-color: #cc0019; }
+    .react-root .btn-outlined.btn-danger:active {
+      border-color: #b30016; }
+.react-root .btn-round {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%; }
+  .react-root .btn-round.btn-large {
+    width: 4.5rem;
+    height: 4.5rem; }
+  .react-root .btn-round.btn-small {
+    width: 2rem;
+    height: 2rem; }
+.react-root .btn-long {
+  padding: 1rem 3rem; }
+.react-root .btn-small {
+  font-size: 1.2rem;
+  padding: 0.8rem;
+  text-transform: capitalize; }
+  .react-root .btn-small.btn-long {
+    padding: 0.8rem 2.4rem; }
+.react-root .btn-large {
+  font-size: 2rem;
+  padding: 1.2rem;
+  text-transform: capitalize; }
+  .react-root .btn-large.btn-long {
+    padding: 1.2rem 3.6rem; }
+.react-root .btn-icon [class^="icon-"], .react-root .btn-icon [class*=" icon-"] {
+  font-size: 1.6rem; }
+.react-root .btn-icon.btn-large [class^="icon-"], .react-root .btn-icon.btn-large [class*=" icon-"] {
+  font-size: 2rem; }
+.react-root .btn-icon.btn-small [class^="icon-"], .react-root .btn-icon.btn-small [class*=" icon-"] {
+  font-size: 1.4rem; }
+.react-root .btn-sharp {
+  border-radius: 0; }
+.react-root .btn-disabled {
+  cursor: default;
+  opacity: 0.5; }
+.react-root html.can-touch .tappable:hover {
+  background: none;
+  color: #515151; }
+.react-root html.can-touch .btn:hover {
+  background: #1a84ff;
+  color: #ffffff; }
+.react-root html.can-touch .btn-primary:hover {
+  background: #1a84ff; }
+.react-root html.can-touch .btn-secondary:hover {
+  background: #e23f5b; }
+.react-root html.can-touch .btn-success:hover {
+  background: #4bca5e; }
+.react-root html.can-touch .btn-danger:hover {
+  background: #ff001f; }
+.react-root html.can-touch .btn-inverted:hover {
+  background: none !important;
+  color: #1a84ff; }
+.react-root .card {
+  box-shadow: rgba(0, 0, 0, 0.1) 0.1rem 0.2rem 0.2rem 0.1rem;
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 0.4rem; }
+  .react-root .card--large {
+    padding: 2rem; }
+.react-root .row {
+  display: flex;
+  flex-direction: row; }
+.react-root .column {
+  display: flex;
+  flex-direction: column; }
+.react-root .flex-ac, .react-root .flex-c {
+  align-items: center; }
+.react-root .flex-jc, .react-root .flex-c {
+  justify-content: center; }
+.react-root .justify-end {
+  justify-content: flex-end; }
+.react-root .flex-fill {
+  flex: 1 0 0; }
+.react-root .divider {
+  border: solid 0.05rem rgba(0, 0, 0, 0.09); }
+.react-root .stretched {
+  align-self: stretch; }
+.react-root .align-items-end {
+  align-items: flex-end; }
+.react-root .nowrap {
+  flex-wrap: nowrap; }
+.react-root .wrap {
+  flex-wrap: wrap; }
+.react-root .flex-grid {
+  display: flex;
+  flex-wrap: wrap; }
+@media screen and (min-width: 2px) {
+  .react-root .flex-grid-xs-1 {
+    width: 100%; } }
+@media screen and (min-width: 2px) {
+  .react-root .flex-grid-xs-2 {
+    width: 50%; } }
+@media screen and (min-width: 2px) {
+  .react-root .flex-grid-xs-3 {
+    width: 33.3333333333%; } }
+@media screen and (min-width: 481px) {
+  .react-root .flex-grid-sm-1 {
+    width: 100%; } }
+@media screen and (min-width: 481px) {
+  .react-root .flex-grid-sm-2 {
+    width: 50%; } }
+@media screen and (min-width: 481px) {
+  .react-root .flex-grid-sm-3 {
+    width: 33.3333333333%; } }
+@media screen and (min-width: 769px) {
+  .react-root .flex-grid-md-1 {
+    width: 100%; } }
+@media screen and (min-width: 769px) {
+  .react-root .flex-grid-md-2 {
+    width: 50%; } }
+@media screen and (min-width: 769px) {
+  .react-root .flex-grid-md-3 {
+    width: 33.3333333333%; } }
+@media screen and (min-width: 1025px) {
+  .react-root .flex-grid-lg-1 {
+    width: 100%; } }
+@media screen and (min-width: 1025px) {
+  .react-root .flex-grid-lg-2 {
+    width: 50%; } }
+@media screen and (min-width: 1025px) {
+  .react-root .flex-grid-lg-3 {
+    width: 33.3333333333%; } }
+@media screen and (min-width: 1201px) {
+  .react-root .flex-grid-xl-1 {
+    width: 100%; } }
+@media screen and (min-width: 1201px) {
+  .react-root .flex-grid-xl-2 {
+    width: 50%; } }
+@media screen and (min-width: 1201px) {
+  .react-root .flex-grid-xl-3 {
+    width: 33.3333333333%; } }
+.react-root .form select {
+  appearance: none;
+  background-color: unset; }
+.react-root .form .textarea {
+  display: block;
+  resize: none; }
+.react-root .form input, .react-root .form .input, .react-root .form textarea, .react-root .form .textarea, .react-root .form select {
+  padding: 1rem;
+  border-radius: 0.4rem;
+  border: 0.2rem solid #d6d6d6;
+  width: 100%;
+  line-height: 1.4; }
+  .react-root .form input[disabled], .react-root .form .input[disabled], .react-root .form textarea[disabled], .react-root .form .textarea[disabled], .react-root .form select[disabled] {
+    cursor: not-allowed;
+    background-color: #d6d6d6;
+    color: #828282; }
+  .react-root .form input:focus, .react-root .form .input:focus, .react-root .form textarea:focus, .react-root .form .textarea:focus, .react-root .form select:focus {
+    border-color: #1a84ff;
+    outline: none !important; }
+  .react-root .form input::placeholder, .react-root .form .input::placeholder, .react-root .form textarea::placeholder, .react-root .form .textarea::placeholder, .react-root .form select::placeholder {
+    color: #828282; }
+.react-root .form button:focus {
+  outline: none !important; }
+.react-root .form--compact input, .react-root .form--compact select, .react-root .form--compact textarea, .react-root .form--compact .textarea {
+  background-color: #f5faff;
+  border: none;
+  padding: 0.8rem; }
+  .react-root .form--compact input:focus, .react-root .form--compact select:focus, .react-root .form--compact textarea:focus, .react-root .form--compact .textarea:focus {
+    border: none; }
+.react-root .form--inline {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end; }
+  .react-root .form--inline .form-field {
+    margin-right: 1.5rem;
+    margin-bottom: 0; }
+.react-root .form-field {
+  margin-bottom: 1.5rem; }
+  .react-root .form-field__header--present {
+    margin-bottom: 0.5rem; }
+  .react-root .form-field--inline {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    .react-root .form-field--inline .form-field__header {
+      margin-right: 0.5rem;
+      margin-bottom: 0; }
+  .react-root .form-field--compact .form-field__header {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+.react-root .form-field-label {
+  color: #000000;
+  display: inline-flex;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: 600; }
+  .react-root .form-field-label__required {
+    margin-left: 0.2rem; }
+  .react-root .form-field-label--compact {
+    font-size: 1.6rem; }
+.react-root .form-helper-text {
+  font-size: 1.2rem;
+  color: #828282;
+  margin: 0.2rem 0; }
+  .react-root .form-helper-text--success, .react-root .form-helper-text.success {
+    color: #4bca5e; }
+  .react-root .form-helper-text--error, .react-root .form-helper-text.error {
+    color: #ff001f; }
+.react-root .form-attention-mark {
+  font-size: 1.6rem;
+  color: #ff001f; }
+.react-root .layout {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%; }
+  .react-root .layout__header, .react-root .layout__footer {
+    display: flex;
+    flex: 0 0 auto; }
+  .react-root .layout__header {
+    background-color: #ffffff; }
+  .react-root .layout__content {
+    background-color: #ffffff;
+    position: relative;
+    flex: 1 0 0; }
+    .react-root .layout__content--centered {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+    .react-root .layout__content--bottom {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end; }
+    .react-root .layout__content--fit {
+      flex: 1 0 auto;
+      overflow-y: hidden !important; }
+    .react-root .layout__content--transparent {
+      background-color: transparent; }
+.react-root .scroll-base, .react-root .scroll, .react-root .layout__content, .react-root .scroll-h {
+  -webkit-overflow-scrolling: touch; }
+  .react-root .scroll-base::-webkit-scrollbar, .react-root .scroll::-webkit-scrollbar, .react-root .layout__content::-webkit-scrollbar, .react-root .scroll-h::-webkit-scrollbar {
+    background: #f5f5f5; }
+  .react-root .scroll-base::-webkit-scrollbar-thumb, .react-root .scroll::-webkit-scrollbar-thumb, .react-root .layout__content::-webkit-scrollbar-thumb, .react-root .scroll-h::-webkit-scrollbar-thumb {
+    background: #c8c8c8;
+    border-radius: 0.4rem; }
+  .react-root .scroll-base::-webkit-scrollbar-thumb:hover, .react-root .scroll::-webkit-scrollbar-thumb:hover, .react-root .layout__content::-webkit-scrollbar-thumb:hover, .react-root .scroll-h::-webkit-scrollbar-thumb:hover {
+    background: #c8c8c8; }
+  .react-root .scroll-base::-webkit-scrollbar-thumb:active, .react-root .scroll::-webkit-scrollbar-thumb:active, .react-root .layout__content::-webkit-scrollbar-thumb:active, .react-root .scroll-h::-webkit-scrollbar-thumb:active {
+    background: #c8c8c8; }
+  .react-root .scroll-base::-webkit-scrollbar-track, .react-root .scroll::-webkit-scrollbar-track, .react-root .layout__content::-webkit-scrollbar-track, .react-root .scroll-h::-webkit-scrollbar-track {
+    border: 0.1rem gray #d6d6d6;
+    border-radius: 0.4rem; }
+.react-root .scroll, .react-root .layout__content, .react-root .scroll-h {
+  overflow-y: auto; }
+  .react-root .scroll::-webkit-scrollbar:vertical, .react-root .layout__content::-webkit-scrollbar:vertical, .react-root .scroll-h::-webkit-scrollbar:vertical {
+    width: 0.5rem; }
+  .react-root .scroll::-webkit-scrollbar:horizontal, .react-root .layout__content::-webkit-scrollbar:horizontal, .react-root .scroll-h::-webkit-scrollbar:horizontal {
+    height: 0.6rem; }
+.react-root .scroll-h {
+  overflow-x: auto; }
+  .react-root .scroll-h::-webkit-scrollbar {
+    height: 0.6rem; }
+.react-root .scroll-bar-hidden::-webkit-scrollbar {
+  display: none; }
+.react-root .m-0 {
+  margin: 0rem; }
+.react-root .p-0 {
+  padding: 0rem; }
+.react-root .m-l-0 {
+  margin-left: 0rem; }
+.react-root .p-l-0 {
+  padding-left: 0rem; }
+.react-root .m-r-0 {
+  margin-right: 0rem; }
+.react-root .p-r-0 {
+  padding-right: 0rem; }
+.react-root .m-t-0 {
+  margin-top: 0rem; }
+.react-root .p-t-0 {
+  padding-top: 0rem; }
+.react-root .m-b-0 {
+  margin-bottom: 0rem; }
+.react-root .p-b-0 {
+  padding-bottom: 0rem; }
+.react-root .m-v-0 {
+  margin: 0rem 0; }
+.react-root .p-v-0 {
+  padding: 0rem 0; }
+.react-root .m-h-0 {
+  margin: 0 0rem; }
+.react-root .p-h-0 {
+  padding: 0 0rem; }
+.react-root .m-5 {
+  margin: 0.5rem; }
+.react-root .p-5 {
+  padding: 0.5rem; }
+.react-root .m-l-5 {
+  margin-left: 0.5rem; }
+.react-root .p-l-5 {
+  padding-left: 0.5rem; }
+.react-root .m-r-5 {
+  margin-right: 0.5rem; }
+.react-root .p-r-5 {
+  padding-right: 0.5rem; }
+.react-root .m-t-5 {
+  margin-top: 0.5rem; }
+.react-root .p-t-5 {
+  padding-top: 0.5rem; }
+.react-root .m-b-5 {
+  margin-bottom: 0.5rem; }
+.react-root .p-b-5 {
+  padding-bottom: 0.5rem; }
+.react-root .m-v-5 {
+  margin: 0.5rem 0; }
+.react-root .p-v-5 {
+  padding: 0.5rem 0; }
+.react-root .m-h-5 {
+  margin: 0 0.5rem; }
+.react-root .p-h-5 {
+  padding: 0 0.5rem; }
+.react-root .m-10 {
+  margin: 1rem; }
+.react-root .p-10 {
+  padding: 1rem; }
+.react-root .m-l-10 {
+  margin-left: 1rem; }
+.react-root .p-l-10 {
+  padding-left: 1rem; }
+.react-root .m-r-10 {
+  margin-right: 1rem; }
+.react-root .p-r-10 {
+  padding-right: 1rem; }
+.react-root .m-t-10 {
+  margin-top: 1rem; }
+.react-root .p-t-10 {
+  padding-top: 1rem; }
+.react-root .m-b-10 {
+  margin-bottom: 1rem; }
+.react-root .p-b-10 {
+  padding-bottom: 1rem; }
+.react-root .m-v-10 {
+  margin: 1rem 0; }
+.react-root .p-v-10 {
+  padding: 1rem 0; }
+.react-root .m-h-10 {
+  margin: 0 1rem; }
+.react-root .p-h-10 {
+  padding: 0 1rem; }
+.react-root .m-15 {
+  margin: 1.5rem; }
+.react-root .p-15 {
+  padding: 1.5rem; }
+.react-root .m-l-15 {
+  margin-left: 1.5rem; }
+.react-root .p-l-15 {
+  padding-left: 1.5rem; }
+.react-root .m-r-15 {
+  margin-right: 1.5rem; }
+.react-root .p-r-15 {
+  padding-right: 1.5rem; }
+.react-root .m-t-15 {
+  margin-top: 1.5rem; }
+.react-root .p-t-15 {
+  padding-top: 1.5rem; }
+.react-root .m-b-15 {
+  margin-bottom: 1.5rem; }
+.react-root .p-b-15 {
+  padding-bottom: 1.5rem; }
+.react-root .m-v-15 {
+  margin: 1.5rem 0; }
+.react-root .p-v-15 {
+  padding: 1.5rem 0; }
+.react-root .m-h-15 {
+  margin: 0 1.5rem; }
+.react-root .p-h-15 {
+  padding: 0 1.5rem; }
+.react-root .m-20 {
+  margin: 2rem; }
+.react-root .p-20 {
+  padding: 2rem; }
+.react-root .m-l-20 {
+  margin-left: 2rem; }
+.react-root .p-l-20 {
+  padding-left: 2rem; }
+.react-root .m-r-20 {
+  margin-right: 2rem; }
+.react-root .p-r-20 {
+  padding-right: 2rem; }
+.react-root .m-t-20 {
+  margin-top: 2rem; }
+.react-root .p-t-20 {
+  padding-top: 2rem; }
+.react-root .m-b-20 {
+  margin-bottom: 2rem; }
+.react-root .p-b-20 {
+  padding-bottom: 2rem; }
+.react-root .m-v-20 {
+  margin: 2rem 0; }
+.react-root .p-v-20 {
+  padding: 2rem 0; }
+.react-root .m-h-20 {
+  margin: 0 2rem; }
+.react-root .p-h-20 {
+  padding: 0 2rem; }
+.react-root h1, .react-root h2, .react-root h3, .react-root h4, .react-root h5, .react-root h6 {
+  margin: 0;
+  margin-bottom: 1rem; }
+.react-root h1, .react-root .h1 {
+  font-size: 3.2rem; }
+.react-root h2, .react-root .h2 {
+  font-size: 2.4rem; }
+.react-root h3, .react-root .h3 {
+  font-size: 2rem; }
+.react-root h4, .react-root .h4 {
+  font-size: 1.6rem; }
+.react-root h5, .react-root .h5 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem; }
+.react-root h6, .react-root .h6 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem; }
+.react-root .bold {
+  font-weight: 600; }
+.react-root .bolder {
+  font-weight: 800; }
+.react-root .normal {
+  font-weight: 400; }
+.react-root .italic {
+  font-style: italic; }
+.react-root .default-font {
+  color: #515151; }
+.react-root .hint {
+  color: #828282; }
+.react-root .dark {
+  color: #000000; }
+.react-root .light {
+  color: #ffffff; }
+.react-root .primary {
+  color: #1a84ff; }
+.react-root .danger {
+  color: #ff001f; }
+.react-root .success {
+  color: #4bca5e; }
+.react-root .warning {
+  color: #ffae42; }
+.react-root .capitalize {
+  text-transform: capitalize; }
+.react-root .link {
+  cursor: pointer;
+  color: #3492ff; }
+  .react-root .link:hover {
+    text-decoration: underline; }
+.react-root button.link {
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  outline: none;
+  border: 0; }
+.react-root .no-mgn-b {
+  margin-bottom: 0; }
+.react-root .text-c {
+  text-align: center; }
+.react-root .text-l {
+  text-align: left; }
+.react-root .text-r {
+  text-align: right; }
+.react-root .uppercase {
+  text-transform: uppercase; }
+.react-root .lowercase {
+  text-transform: lowercase; }
+.react-root .underline {
+  text-decoration: underline; }
+.react-root .text-center {
+  text-align: center; }
+.react-root .border {
+  border: 0.1rem solid #d6d6d6; }
+.react-root .border-bottom {
+  border-bottom: 0.1rem solid #d6d6d6; }
+.react-root .full-width {
+  width: 100%; }
+.react-root .full-height {
+  height: 100%; }
+.react-root .align-c {
+  align-items: center; }
+.react-root .justify-c {
+  justify-content: center; }
+.react-root .space-between {
+  justify-content: space-between; }
+.react-root .no-wrap {
+  white-space: nowrap; }
+.react-root .pre-wrap {
+  white-space: pre-wrap; }
+.react-root .cursor {
+  cursor: pointer; }
+.react-root .not-allowed {
+  cursor: not-allowed; }
+.react-root .relative {
+  position: relative; }
+.react-root .absolute {
+  position: absolute; }
+.react-root .fixed {
+  position: fixed; }
+.react-root .invisible {
+  visibility: hidden; }
+.react-root .fit-content {
+  min-width: fit-content; }
+.react-root .text-shadow {
+  text-shadow: rgba(0, 0, 0, 0.4) 0.1rem 0.1rem 0.4rem; }
+.react-root .ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+.react-root .block {
+  display: block; }
+.react-root .opacity-0 {
+  opacity: 0; }
+.react-root .float-right {
+  float: right; }
+.react-root .float-left {
+  float: left; }
+.react-root .show-in-mobile {
+  display: none !important; }
+  @media screen and (max-width: 480px) {
+    .react-root .show-in-mobile {
+      display: block !important; } }
+.react-root .show-in-tablet {
+  display: none !important; }
+  @media screen and (max-width: 768px) {
+    .react-root .show-in-tablet {
+      display: block !important; } }
+@media screen and (max-width: 480px) {
+  .react-root .hide-in-mobile {
+    display: none !important; } }
+@media screen and (max-width: 768px) {
+  .react-root .hide-in-tablet {
+    display: none !important; } }
+.react-root .show-in-tablet-only {
+  display: none !important; }
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    .react-root .show-in-tablet-only {
+      display: block !important; } }
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .react-root .hide-in-tablet-only {
+    display: none !important; } }
+.react-root .inherit-min-height {
+  min-height: inherit; }
+.react-root .evenly-spaced {
+  width: calc(100% + 2rem);
+  margin-left: -1rem; }
+  .react-root .evenly-spaced__item {
+    margin: 1rem; }
+  .react-root .evenly-spaced--small {
+    width: calc(100% + 1rem);
+    margin-left: -0.5rem; }
+    .react-root .evenly-spaced--small .evenly-spaced__item {
+      margin: 0.5rem; }
+  .react-root .evenly-spaced--large {
+    width: calc(100% + 4rem);
+    margin-left: -2rem; }
+    .react-root .evenly-spaced--large .evenly-spaced__item {
+      margin: 2rem; }
+.react-root ul.compact-list, .react-root ol.compact-list {
+  padding-left: 2rem; }
+.react-root .rotate-180 {
+  transform: rotate(180deg); }
+.react-root .default-rounded {
+  border-radius: 0.4rem; }
+.react-root .hide-overflow {
+  overflow: hidden; }
+.react-root .dashboard {
+  display: flex;
+  flex-direction: row;
+  height: 100%; }
+  @media screen and (max-width: 768px) {
+    .react-root .dashboard {
+      flex-direction: column; } }
+  .react-root .dashboard__content {
+    flex: 1 0 0;
+    min-width: 0; }
+.react-root .accordion {
+  display: flex;
+  flex-flow: column wrap; }
+.react-root .alert__body {
+  margin-bottom: 2rem; }
+.react-root .aspect-ratio {
+  position: relative;
+  width: 100%; }
+  .react-root .aspect-ratio__container {
+    left: 0;
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%; }
+.react-root .avatar {
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden; }
+  .react-root .avatar__fallback {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-transform: uppercase;
+    color: #ffffff;
+    line-height: 1;
+    border-radius: 50%; }
+  .react-root .avatar__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+    .react-root .avatar__image img {
+      border-radius: 50%;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center; }
+    .react-root .avatar__image--hidden {
+      opacity: 0;
+      z-index: -1; }
+.react-root .sr-backdrop {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(1, 1, 1, 0.5);
+  z-index: 96; }
+  .react-root .sr-backdrop--absolute {
+    position: absolute; }
+  .react-root .sr-backdrop--open {
+    display: block; }
+.react-root .badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 2.4rem;
+  min-height: 2.4rem;
+  border-radius: 1.2rem;
+  position: absolute;
+  color: #ffffff;
+  font-size: 1.2rem;
+  overflow: hidden;
+  padding: 0.2rem; }
+  .react-root .badge--top-left {
+    top: -1.2rem;
+    left: -1.2rem; }
+  .react-root .badge--top-right {
+    top: -1.2rem;
+    right: -1.2rem; }
+  .react-root .badge--bottom-left {
+    bottom: -1.2rem;
+    left: -1.2rem; }
+  .react-root .badge--bottom-right {
+    bottom: -1.2rem;
+    right: -1.2rem; }
+  .react-root .badge--info {
+    background-color: #006eee; }
+  .react-root .badge--alert {
+    background-color: #ff001f; }
+  .react-root .badge--small.badge {
+    font-size: 1rem;
+    min-width: 2rem;
+    min-height: 2rem;
+    border-radius: 1rem; }
+    .react-root .badge--small.badge--top-left {
+      top: -1rem;
+      left: -1rem; }
+    .react-root .badge--small.badge--top-right {
+      top: -1rem;
+      right: -1rem; }
+    .react-root .badge--small.badge--bottom-left {
+      bottom: -1rem;
+      left: -1rem; }
+    .react-root .badge--small.badge--bottom-right {
+      bottom: -1rem;
+      right: -1rem; }
+.react-root .badge-container {
+  position: relative; }
+.react-root .banner {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem 2rem;
+  align-items: center; }
+  .react-root .banner__body {
+    display: flex;
+    flex-direction: column; }
+  .react-root .banner__icon {
+    padding: 0 1rem; }
+  .react-root .banner__title {
+    font-size: 2rem;
+    font-weight: 600; }
+.react-root .box {
+  box-shadow: rgba(0, 0, 0, 0.1) 0.1rem 0.2rem 0.2rem 0.1rem;
+  background-color: #ffffff;
+  border-radius: 0.4rem; }
+  .react-root .box__header {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background-color: #f9fcff;
+    border-bottom: 0.1rem solid #d6d6d6;
+    border-top-left-radius: 0.4rem;
+    border-top-right-radius: 0.4rem; }
+  .react-root .box__body {
+    padding: 1rem; }
+  .react-root .box--flat {
+    box-shadow: none; }
+  .react-root .box--bordered {
+    border: 0.1rem solid #d6d6d6; }
+  .react-root .box--large .box__header, .react-root .box--large .box__body {
+    padding: 1rem 2rem; }
+.react-root .bottom-sheet-modal {
+  height: 100vh;
+  width: 100vw;
+  background-color: #ffffff;
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden; }
+  .react-root .bottom-sheet-modal__header {
+    display: flex;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 1rem;
+    width: 100vw;
+    color: #ffffff;
+    transition: all 0.2s linear;
+    transform: translateY(0);
+    z-index: 99;
+    cursor: pointer; }
+    .react-root .bottom-sheet-modal__header i {
+      z-index: 99;
+      margin-right: 1rem; }
+    .react-root .bottom-sheet-modal__header--collapsed {
+      transform: translateY(-100%); }
+.react-root .callout {
+  padding: 1.5rem;
+  font-weight: 800;
+  border-radius: 0.4rem; }
+  .react-root .callout--border {
+    border: 0.1rem solid #d6d6d6; }
+  .react-root .callout--background.callout--primary {
+    color: #1a84ff;
+    background-color: #e7f3ff; }
+  .react-root .callout--border.callout--primary {
+    border-left: 0.4rem solid #1a84ff; }
+  .react-root .callout--background.callout--success {
+    color: #2eb676;
+    background-color: #eaf7f1; }
+  .react-root .callout--border.callout--success {
+    border-left: 0.4rem solid #2eb676; }
+  .react-root .callout--background.callout--warning {
+    color: #b99839;
+    background-color: #fcefc9; }
+  .react-root .callout--border.callout--warning {
+    border-left: 0.4rem solid #b99839; }
+  .react-root .callout--background.callout--danger {
+    color: #e23f5b;
+    background-color: #fcebee; }
+  .react-root .callout--border.callout--danger {
+    border-left: 0.4rem solid #e23f5b; }
+.react-root .chip {
+  display: inline-flex;
+  border-radius: 1.5rem;
+  color: #000000;
+  padding: 0.5rem 1.5rem;
+  align-items: center; }
+  .react-root .chip__icon--left {
+    padding-right: 1rem; }
+  .react-root .chip__icon--right {
+    padding-left: 1rem; }
+  .react-root .chip--default {
+    background-color: #f9fcff; }
+  .react-root .chip--primary {
+    background-color: #1a84ff;
+    color: #ffffff; }
+  .react-root .chip--warning {
+    background-color: #ffae42;
+    color: #ffffff; }
+  .react-root .chip--success {
+    background-color: #4bca5e;
+    color: #ffffff; }
+  .react-root .chip--attention {
+    background-color: #ff001f;
+    color: #ffffff; }
+  .react-root .chip--danger {
+    background-color: #ff001f;
+    color: #ffffff; }
+  .react-root .chip--hint {
+    background-color: #f0f0f0;
+    color: #828282; }
+  .react-root .chip--outlined {
+    background-color: unset !important;
+    border-width: 0.1rem;
+    border-style: solid; }
+    .react-root .chip--outlined.chip--default {
+      color: #828282;
+      border-color: #828282; }
+    .react-root .chip--outlined.chip--primary {
+      color: #1a84ff;
+      border-color: #1a84ff; }
+    .react-root .chip--outlined.chip--warning {
+      color: #ffae42;
+      border-color: #ffae42; }
+    .react-root .chip--outlined.chip--success {
+      color: #4bca5e;
+      border-color: #4bca5e; }
+    .react-root .chip--outlined.chip--attention {
+      border-color: #ff001f;
+      color: #ff001f; }
+    .react-root .chip--outlined.chip--danger {
+      border-color: #ff001f;
+      color: #ff001f; }
+.react-root .circular-loader {
+  border-radius: 50%;
+  animation: 360ms linear 0s infinite running spin;
+  border: 0.4rem solid #d6d6d6;
+  border-top-color: #1a84ff;
+  border-right-color: #1a84ff; }
+.react-root .c-progress__parent-container {
+  display: inline-block;
+  border-radius: 100%;
+  position: relative; }
+.react-root .c-progress__child-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  text-align: center; }
+.react-root .c-progress__child-circle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%; }
+.react-root .c-progress__circle {
+  transform-origin: 50% 50%;
+  transition: 240ms; }
+  .react-root .c-progress__circle--percentage {
+    transform: rotate(-90deg); }
+.react-root .sr-header {
+  display: flex;
+  align-items: center;
+  padding: 0 1.25% 0 0;
+  position: fixed;
+  width: 100%;
+  z-index: 9;
+  height: 7.2rem;
+  background-color: #e7f3ff; }
+  .react-root .sr-header__brand {
+    width: 8rem;
+    margin: 0 auto;
+    text-align: center; }
+    .react-root .sr-header__brand a {
+      display: inline-block;
+      text-align: center; }
+    @media screen and (max-width: 480px) {
+      .react-root .sr-header__brand {
+        width: auto; }
+        .react-root .sr-header__brand .icon-hamburger {
+          font-size: 2.5rem;
+          color: #0f87ff; } }
+    .react-root .sr-header__brand img {
+      width: 3rem;
+      max-width: 3rem; }
+  .react-root .sr-header__content {
+    display: flex;
+    align-items: center;
+    flex: 1; }
+  .react-root .sr-header__dropdown {
+    padding: 0.3rem 2rem;
+    background: #ffffff;
+    border-radius: 5rem;
+    font-weight: bold;
+    margin-right: 2rem; }
+    @media screen and (max-width: 768px) {
+      .react-root .sr-header__dropdown {
+        margin-right: 1rem; } }
+    @media screen and (max-width: 480px) {
+      .react-root .sr-header__dropdown {
+        padding: 0.3rem 0.5rem; }
+        .react-root .sr-header__dropdown span, .react-root .sr-header__dropdown i {
+          font-size: 1.2rem; } }
+  .react-root .sr-header__dropdown-popover {
+    transform: translateX(-2rem); }
+  .react-root .sr-header__account-item {
+    padding: 1rem 3rem !important; }
+    @media screen and (max-width: 768px) {
+      .react-root .sr-header__account-item {
+        padding: 0.5rem !important;
+        font-size: 1.2rem; } }
+  .react-root .sr-header .whatsapp-notification {
+    display: none;
+    position: absolute;
+    background: #ffffff;
+    top: 6.5rem;
+    right: 6rem;
+    width: 30rem;
+    padding: 0;
+    border-radius: 0.6rem;
+    font-family: 'Nunito', 'Roboto', 'Arial', sans-serif;
+    box-shadow: rgba(0, 0, 0, 0.15) 0 0 0.8rem 0.1rem; }
+    @media screen and (min-width: 769px) {
+      .react-root .sr-header .whatsapp-notification {
+        display: block; } }
+    .react-root .sr-header .whatsapp-notification__close {
+      cursor: pointer;
+      display: block;
+      background: inherit;
+      font-weight: 800;
+      position: absolute;
+      right: 0.1rem;
+      top: 0.2rem; }
+    .react-root .sr-header .whatsapp-notification__container {
+      padding: 1rem;
+      margin-top: 0.5rem; }
+    .react-root .sr-header .whatsapp-notification__heading {
+      display: flex;
+      align-items: center;
+      margin: 0 0 0.5rem 0; }
+      .react-root .sr-header .whatsapp-notification__heading > h5 {
+        margin: 0 1rem; }
+    .react-root .sr-header .whatsapp-notification__desc {
+      font-size: 1.4rem;
+      color: #4e5f72;
+      margin: 0 0 0.5rem 0; }
+    .react-root .sr-header .whatsapp-notification__icon {
+      height: 2.4rem;
+      width: 2.4rem; }
+    .react-root .sr-header .whatsapp-notification__link {
+      font-size: 1.2rem;
+      font-weight: 800;
+      color: #0f87ff; }
+    .react-root .sr-header .whatsapp-notification:after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: -0.9rem;
+      right: 2.7rem;
+      width: 1.6rem;
+      height: 1.6rem;
+      background: #ffffff;
+      border-right: 0.1rem solid rgba(0, 0, 0, 0.15);
+      border-top: 0.1rem solid rgba(0, 0, 0, 0.15);
+      transform: rotate(-45deg); }
+.react-root .data-table {
+  border-collapse: collapse;
+  width: 100%; }
+  .react-root .data-table__row:nth-child(even) {
+    background-color: #f9fcff; }
+  .react-root .data-table__col {
+    white-space: nowrap;
+    padding: 1rem; }
+    .react-root .data-table__col--select {
+      text-align: center; }
+  .react-root .data-table__header {
+    background-color: #1a84ff;
+    color: #ffffff;
+    font-weight: 600; }
+    .react-root .data-table__header th:not(:last-child) {
+      border-right: 0.1rem solid #ffffff; }
+  .react-root .data-table__header-item {
+    display: flex;
+    align-items: center; }
+  .react-root .data-table__header-label {
+    flex: 1 0 0;
+    margin: 0 0.5rem; }
+  .react-root .data-table__header-actions {
+    display: flex;
+    margin: 0 0.5rem;
+    align-items: center; }
+  .react-root .data-table__action {
+    position: relative;
+    margin: 0 0.5rem; }
+    .react-root .data-table__action:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 0.8rem;
+      height: 0.8rem;
+      background-color: #4bca5e;
+      border-radius: 50%;
+      display: none; }
+    .react-root .data-table__action--active:after {
+      display: block; }
+  .react-root .data-table--sticky-header thead {
+    position: sticky;
+    top: 0; }
+.react-root .data-table-container {
+  border-radius: 0.4rem;
+  border: 0.1rem solid #d6d6d6;
+  max-width: 100%;
+  overflow-x: auto; }
+.react-root .data-table-empty {
+  width: 100%;
+  padding: 2rem; }
+.react-root .data-table-form {
+  min-width: 24rem; }
+  .react-root .data-table-form input, .react-root .data-table-form select {
+    padding: 0.5rem; }
+  .react-root .data-table-form .form-field-label {
+    font-size: 1.6rem; }
+  .react-root .data-table-form__actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; }
+.react-root .dialog__body {
+  margin-bottom: 2rem; }
+.react-root .dialog__actions {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  margin-left: -1rem;
+  padding: 0.5rem;
+  width: calc(100% + 2rem); }
+.react-root .dialog__action {
+  flex: 1 0 0;
+  margin: 0 0.5rem; }
+.react-root .cm-divider {
+  background-color: #d6d6d6;
+  margin: 1rem;
+  width: 0.1rem; }
+.react-root .draggable-window {
+  position: fixed;
+  z-index: 1; }
+  .react-root .draggable-window__trigger {
+    cursor: move; }
+.react-root .dropdown__title {
+  overflow: hidden; }
+.react-root .dropdown__popover {
+  display: flex;
+  flex-direction: column;
+  border: 0.1rem solid #d6d6d6;
+  background-color: #ffffff;
+  padding: 0.5rem 0; }
+.react-root .dropdown-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1rem; }
+.react-root .expandable {
+  display: flex;
+  flex-direction: column; }
+  .react-root .expandable__content {
+    height: 10rem;
+    overflow: hidden; }
+  .react-root .expandable--expanded {
+    height: auto !important; }
+  .react-root .expandable__anchor {
+    color: #0c7cff;
+    background: none;
+    margin-top: 0.5rem;
+    align-self: flex-end;
+    width: fit-content;
+    border: none;
+    padding: 0; }
+  .react-root .expandable__anchor:hover {
+    cursor: pointer; }
+.react-root .file-uploader {
+  position: relative;
+  overflow: hidden; }
+  .react-root .file-uploader--progress:after {
+    background-image: linear-gradient(to right, violet, blue, green, orange, red, orange, green, blue, violet);
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 200%;
+    height: 0.4rem;
+    animation: indeterminate 720ms linear infinite; }
+.react-root .admin-header {
+  padding: 2rem 1rem;
+  background-color: #1a84ff;
+  color: #ffffff;
+  height: 7.5rem;
+  align-items: center; }
+  .react-root .admin-header__title {
+    flex: 1 0 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 2rem;
+    font-weight: 600; }
+  .react-root .admin-header__root {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-right: 2rem; }
+  .react-root .admin-header__actions {
+    display: flex;
+    align-items: center; }
+    .react-root .admin-header__actions--left {
+      margin-right: 0.5rem; }
+    .react-root .admin-header__actions--right {
+      margin-left: 0.5rem; }
+    .react-root .admin-header__actions input, .react-root .admin-header__actions select {
+      background-color: #ffffff; }
+.react-root .hmr {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  padding: 0;
+  min-width: 100%;
+  border-bottom-left-radius: 0.4rem;
+  border-bottom-right-radius: 0.4rem; }
+  .react-root .hmr__progress {
+    height: 0.7rem;
+    background-color: #4bca5e; }
+.react-root .horizontal-scroll-view {
+  position: relative;
+  width: 100%; }
+  .react-root .horizontal-scroll-view__items {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-x: auto; }
+    .react-root .horizontal-scroll-view__items::-webkit-scrollbar {
+      display: none; }
+  .react-root .horizontal-scroll-view__control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); }
+    .react-root .horizontal-scroll-view__control [class^="icon-"] {
+      font-size: 2rem; }
+    .react-root .horizontal-scroll-view__control--left {
+      left: 1rem; }
+    .react-root .horizontal-scroll-view__control--right {
+      right: 1rem; }
+    .react-root .horizontal-scroll-view__control--floating {
+      box-shadow: rgba(0, 0, 0, 0.1) 0.1rem 0.2rem 0.2rem 0.1rem;
+      background-color: #ffffff;
+      color: #515151; }
+      .react-root .horizontal-scroll-view__control--floating:hover {
+        background-color: #ffffff;
+        color: #515151; }
+      .react-root .horizontal-scroll-view__control--floating:active {
+        background-color: #e6e6e6;
+        color: #515151; }
+    .react-root .horizontal-scroll-view__control--left-floating {
+      left: -1.5rem; }
+    .react-root .horizontal-scroll-view__control--right-floating {
+      right: -1.5rem; }
+.react-root .html-content {
+  flex: 1 0 0; }
+  .react-root .html-content__container {
+    width: 100%;
+    flex: 1 0 0;
+    word-break: break-word;
+    white-space: normal;
+    font-family: 'Source Sans Pro', 'Roboto', 'Arial', sans-serif !important; }
+    .react-root .html-content__container p, .react-root .html-content__container span {
+      word-break: break-word;
+      white-space: normal; }
+    .react-root .html-content__container img {
+      max-width: 100%; }
+    .react-root .html-content__container div, .react-root .html-content__container p, .react-root .html-content__container span, .react-root .html-content__container a, .react-root .html-content__container h1, .react-root .html-content__container h2, .react-root .html-content__container h3, .react-root .html-content__container h4, .react-root .html-content__container h5, .react-root .html-content__container h6 {
+      font-family: 'Source Sans Pro', 'Roboto', 'Arial', sans-serif !important; }
+    .react-root .html-content__container a {
+      cursor: pointer;
+      color: #0f87ff !important; }
+      .react-root .html-content__container a:hover {
+        text-decoration: underline !important; }
+    .react-root .html-content__container pre {
+      background-color: #f0f0f0;
+      border: 0.1rem solid #d6d6d6;
+      border-radius: 0.4rem;
+      padding: 0 0.5rem;
+      margin: 1rem 0;
+      white-space: break-spaces; }
+      .react-root .html-content__container pre code {
+        background-color: none;
+        border: none;
+        border-radius: none;
+        color: #515151;
+        padding: 0; }
+      .react-root .html-content__container pre div, .react-root .html-content__container pre p, .react-root .html-content__container pre span, .react-root .html-content__container pre a, .react-root .html-content__container pre h1, .react-root .html-content__container pre h2, .react-root .html-content__container pre h3, .react-root .html-content__container pre h4, .react-root .html-content__container pre h5, .react-root .html-content__container pre h6 {
+        font-family: monospace !important; }
+    .react-root .html-content__container blockquote {
+      margin: 0.5rem 0;
+      quotes: none;
+      padding: 0;
+      padding-left: 1rem;
+      border-left: 0.5rem solid #d6d6d6; }
+.react-root .image-modal {
+  padding: 0; }
+  .react-root .image-modal.sr-modal {
+    border: none;
+    max-width: 60rem;
+    background-color: transparent; }
+  .react-root .image-modal .sr-modal__body {
+    padding: 0; }
+    .react-root .image-modal .sr-modal__body img {
+      width: 100%; }
+.react-root .md-renderer p {
+  display: inline;
+  word-break: break-word; }
+.react-root .md-renderer a {
+  cursor: pointer;
+  color: #0f87ff;
+  text-decoration: none; }
+  .react-root .md-renderer a:focus, .react-root .md-renderer a:active {
+    text-decoration: none; }
+  .react-root .md-renderer a:hover {
+    text-decoration: underline; }
+.react-root .md-renderer code {
+  border: 0.1rem solid #d6d6d6;
+  border-radius: 0.4rem;
+  background-color: #f0f0f0;
+  color: #ff001f;
+  padding: 0 0.5rem;
+  font-family: monospace; }
+.react-root .md-renderer pre {
+  background-color: #f0f0f0;
+  border: 0.1rem solid #d6d6d6;
+  border-radius: 0.4rem;
+  padding: 0 0.5rem;
+  margin: 0;
+  white-space: normal;
+  word-break: break-word;
+  text-align: left; }
+  .react-root .md-renderer pre code {
+    background-color: none;
+    border: none;
+    border-radius: none;
+    color: #515151;
+    padding: 0; }
+.react-root .md-renderer blockquote {
+  margin: 0.5rem 0;
+  quotes: none;
+  padding: 0;
+  padding-left: 1rem;
+  border-left: 0.5rem solid #d6d6d6; }
+.react-root .md-renderer .emoji-mart-emoji {
+  vertical-align: middle; }
+.react-root .toast--with-mascot {
+  background-color: #ffffff !important;
+  width: 38rem;
+  padding: 0 !important;
+  box-shadow: rgba(0, 0, 0, 0.1) 0.1rem 0.2rem 0.2rem 0.1rem; }
+.react-root .mascot-toast-container {
+  display: flex;
+  align-items: center;
+  padding: 2rem 1rem;
+  position: relative;
+  border-radius: 0.4rem; }
+  .react-root .mascot-toast-container__content {
+    display: flex;
+    flex-direction: column;
+    margin: 0 2rem;
+    color: #324766;
+    font-size: 1.4rem;
+    font-weight: 400; }
+  .react-root .mascot-toast-container__title {
+    color: #324766;
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-right: 0.5rem; }
+  .react-root .mascot-toast-container--success:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #ecf7f1;
+    width: 100%;
+    height: 1rem; }
+  .react-root .mascot-toast-container--error:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #f9ecee;
+    width: 100%;
+    height: 1rem; }
+.react-root .mascot-emoji {
+  position: relative; }
+  .react-root .mascot-emoji__bg {
+    position: absolute;
+    top: -35%;
+    left: -15%;
+    object-fit: contain;
+    height: 120%;
+    width: 130%; }
+  .react-root .mascot-emoji__mascot {
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    position: absolute; }
+  .react-root .mascot-emoji--small {
+    height: 5rem;
+    width: 5rem; }
+  .react-root .mascot-emoji--medium {
+    height: 7rem;
+    width: 7rem; }
+  .react-root .mascot-emoji--large {
+    height: 10rem;
+    width: 10rem; }
+.react-root .milestone-progress {
+  display: flex;
+  padding: 1rem;
+  flex-direction: row;
+  border: none;
+  background-color: #ffeded;
+  align-items: center; }
+  .react-root .milestone-progress__icon {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 0.5rem 0; }
+  .react-root .milestone-progress__content {
+    flex: 3;
+    display: flex;
+    flex-direction: column; }
+  .react-root .milestone-progress__content-header {
+    font-size: 2.4rem;
+    font-weight: 600; }
+  .react-root .milestone-progress__content-progress {
+    margin-top: 1rem;
+    border: none;
+    align-items: center; }
+.react-root .sr-modal {
+  display: none;
+  position: fixed;
+  flex-direction: column;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 0.4rem;
+  border: 0.1rem solid #d6d6d6;
+  width: 90%;
+  max-width: 40rem;
+  z-index: 97;
+  background-color: #ffffff;
+  color: #515151;
+  overflow: hidden; }
+  @media screen and (max-width: 480px) {
+    .react-root .sr-modal {
+      max-width: 32rem; } }
+  .react-root .sr-modal--large {
+    max-width: 72rem; }
+  .react-root .sr-modal--extra-large {
+    max-width: 100rem; }
+  .react-root .sr-modal--absolute {
+    position: absolute; }
+  .react-root .sr-modal--right {
+    top: 0;
+    left: calc(100% - 40rem);
+    transform: translate(0, 0); }
+    @media screen and (max-width: 480px) {
+      .react-root .sr-modal--right {
+        left: calc(100% - 32rem); } }
+    .react-root .sr-modal--right.sr-modal--large {
+      left: calc(100% - 72rem); }
+    .react-root .sr-modal--right.sr-modal--extra-large {
+      left: calc(100% - 100rem); }
+  .react-root .sr-modal--open {
+    display: flex; }
+  .react-root .sr-modal__close-alt {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    z-index: 1; }
+    .react-root .sr-modal__close-alt i {
+      font-size: 2.4rem; }
+  .react-root .sr-modal__header {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background-color: #f9fcff;
+    border-bottom: 0.1rem solid #d6d6d6; }
+  .react-root .sr-modal__title {
+    flex: 1 0 0;
+    margin-right: 1rem;
+    color: #000000;
+    font-weight: 800;
+    font-size: 2rem; }
+  .react-root .sr-modal__body {
+    padding: 1rem;
+    overflow: auto; }
+  .react-root .sr-modal--flat {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: none;
+    border-radius: 0;
+    max-width: none; }
+    .react-root .sr-modal--flat .sr-modal__body {
+      flex: 1 0 0; }
+.react-root .moonshot .sr-modal {
+  max-width: 55rem; }
+  .react-root .moonshot .sr-modal__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600; }
+  .react-root .moonshot .sr-modal__body {
+    text-align: center;
+    min-height: 40rem; }
+  .react-root .moonshot .sr-modal .layout {
+    min-height: 40rem; }
+.react-root .moonshot__image-container img {
+  width: 44rem; }
+  @media screen and (max-width: 480px) {
+    .react-root .moonshot__image-container img {
+      width: 30rem; } }
+.react-root .moonshot__image {
+  max-width: 40rem; }
+.react-root .moonshot__footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0; }
+.react-root .moonshot__footer-img {
+  height: 3.2rem;
+  width: 3.2rem;
+  margin: 1rem;
+  cursor: pointer; }
+.react-root .multiselect-creatable {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  border: 0.2rem solid #d6d6d6; }
+  .react-root .multiselect-creatable__selected {
+    display: flex;
+    margin: 0 0.5rem 0 0;
+    cursor: pointer; }
+  .react-root .multiselect-creatable__selected-option {
+    background: #ded7f4;
+    padding: 1rem;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem; }
+  .react-root .multiselect-creatable__option-cross {
+    background: #c0abdd;
+    padding: 1rem;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem; }
+  .react-root .multiselect-creatable__container {
+    flex: 1;
+    min-width: 20rem; }
+    .react-root .multiselect-creatable__container input {
+      border: none; }
+  .react-root .multiselect-creatable__popover {
+    min-width: 40rem;
+    max-height: 20rem; }
+    .react-root .multiselect-creatable__popover .select-option {
+      cursor: pointer;
+      overflow: unset !important; }
+.react-root .navigation-tabs {
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start; }
+.react-root .navigation-tab-item {
+  padding: 1.5rem;
+  font-size: 2rem;
+  font-weight: 600;
+  position: relative; }
+  .react-root .navigation-tab-item:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 0;
+    bottom: 0;
+    height: 0.4rem;
+    color: #1a84ff;
+    transition: 180ms;
+    background-color: #1a84ff;
+    border-radius: 0.4rem; }
+  .react-root .navigation-tab-item--active {
+    color: #000000; }
+    .react-root .navigation-tab-item--active:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 0.4rem; }
+.react-root .nudge {
+  max-width: 36rem;
+  padding-top: 1rem; }
+  .react-root .nudge__action {
+    position: absolute;
+    font-size: 1.4rem;
+    right: 0.5rem;
+    top: 0.5rem; }
+  .react-root .nudge.popover {
+    box-shadow: rgba(0, 0, 0, 0.1) 0 0 0.3rem 0.2rem; }
+.react-root .pagination {
+  display: flex;
+  justify-content: center;
+  align-items: stretch; }
+  .react-root .pagination__btn {
+    padding: 0.5rem;
+    background-color: #f0f0f0;
+    margin-right: 1rem;
+    border-radius: 0.5rem;
+    width: 4rem;
+    height: 4rem; }
+    .react-root .pagination__btn:last-child {
+      margin-right: 0; }
+    .react-root .pagination__btn:hover, .react-root .pagination__btn--active {
+      background-color: #1a84ff;
+      color: #ffffff; }
+    .react-root .pagination__btn--disabled {
+      background-color: #d6d6d6;
+      pointer-events: none;
+      cursor: not-allowed; }
+    .react-root .pagination__btn--prev, .react-root .pagination__btn--next {
+      color: #1a84ff;
+      font-size: 2rem; }
+.react-root .popover {
+  position: absolute;
+  z-index: 99;
+  background-color: #ffffff;
+  border-radius: 0.4rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0.1rem 0.2rem 0.2rem 0.1rem; }
+.react-root .progressbar {
+  display: flex;
+  justify-content: space-between;
+  border: 0.1rem solid #e3e3e3;
+  border-radius: 0.8rem;
+  background-color: #ffffff;
+  height: 1.7rem;
+  position: relative; }
+  .react-root .progressbar__checkpoint {
+    position: absolute; }
+  .react-root .progressbar__checkpoint-wrapper {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem; }
+    .react-root .progressbar__checkpoint-wrapper span {
+      margin-left: -0.5rem; }
+  .react-root .progressbar__checkpoint-icon {
+    width: 3rem;
+    margin-top: -0.5rem; }
+  .react-root .progressbar__checkpoint-text {
+    white-space: nowrap;
+    transform: translateX(-35%); }
+  .react-root .progressbar__checkpoint-mark {
+    width: 0.1rem;
+    height: 2.5rem;
+    background-color: #000000; }
+  .react-root .progressbar__color {
+    text-align: right;
+    border-radius: 0.8rem;
+    padding-right: 0.7rem;
+    background-color: #4bca5e;
+    font-size: 1.2rem;
+    color: #ffffff; }
+    .react-root .progressbar__color--blue {
+      background-color: #1a84ff; }
+  .react-root .progressbar__limit {
+    font-size: 1.2rem;
+    padding-right: 0.5rem; }
+.react-root .quick-select {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -0.3rem; }
+  .react-root .quick-select--block {
+    flex-direction: column;
+    align-items: stretch; }
+  .react-root .quick-select__option {
+    margin: 0.3rem;
+    border: 0.1rem solid #d6d6d6;
+    border-radius: 0.4rem;
+    padding: 0.5rem 1.5rem;
+    background-color: transparent;
+    cursor: pointer; }
+    .react-root .quick-select__option--selected {
+      color: #ffffff;
+      border-color: #1a84ff;
+      background-color: #1a84ff; }
+.react-root .sr-radio-button {
+  cursor: pointer;
+  margin: 0.3rem 0; }
+  .react-root .sr-radio-button--disabled {
+    pointer-events: none; }
+  .react-root .sr-radio-button__input {
+    display: none; }
+    .react-root .sr-radio-button__input:checked + span:before {
+      box-shadow: inset 0 0 0 0.2rem #ffffff; }
+  .react-root .sr-radio-button__text {
+    display: flex;
+    position: relative;
+    align-items: center;
+    font-weight: 600;
+    color: #000000;
+    padding-left: 2.6rem; }
+    .react-root .sr-radio-button__text:before {
+      position: absolute;
+      content: '';
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: #1a84ff;
+      border-radius: 50%;
+      border: 0.1rem solid #1a84ff;
+      box-shadow: inset 0 0 0 2rem #ffffff;
+      height: 1.4rem;
+      width: 1.4rem;
+      transition: 180ms; }
+.react-root .sr-radio-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch; }
+.react-root .rating {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .react-root .rating .dv-star-rating-star {
+    margin: 0.3rem;
+    font-size: 2.4rem; }
+  .react-root .rating--large .dv-star-rating-star {
+    margin: 0 0.5rem;
+    font-size: 3.2rem; }
+.react-root .rating-2 {
+  display: flex;
+  align-items: center; }
+.react-root .rating-option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0; }
+  .react-root .rating-option__icon {
+    width: 4rem;
+    margin-bottom: 0.5rem; }
+    .react-root .rating-option__icon img {
+      vertical-align: bottom;
+      width: calc(100% - 1rem); }
+    @media screen and (max-width: 480px) {
+      .react-root .rating-option__icon {
+        width: 3rem; } }
+  .react-root .rating-option__label {
+    font-size: 1.2rem;
+    color: #828282; }
+  .react-root .rating-option--selected .rating-option__icon {
+    animation: 240ms normal ease-in-out both 1;
+    animation-name: scaler-anim-1; }
+@keyframes scaler-anim-1 {
+  0% {
+    transform: scale(1); }
+  80% {
+    transform: scale(1.3); }
+  100% {
+    transform: scale(1.2); } }
+  .react-root .rating-option--selected .rating-option__label {
+    color: #515151; }
+  .react-root .rating-option--active .rating-option__label, .react-root .rating-option--in-active .rating-option__label {
+    opacity: 0; }
+  .react-root .rating-option--readonly {
+    cursor: default; }
+    .react-root .rating-option--readonly .rating-option__icon {
+      animation: none; }
+  .react-root .rating-option:not(:last-child) {
+    margin-right: 1rem; }
+.react-root .resizable {
+  overflow: auto; }
+  .react-root .resizable__handle {
+    position: relative;
+    background-color: #f4f4f4;
+    width: 100%;
+    cursor: col-resize;
+    margin: 0 0.5rem; }
+    .react-root .resizable__handle:after {
+      content: '';
+      position: absolute;
+      width: 0.3rem;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 1rem;
+      background-color: #d6d6d6;
+      height: 5rem;
+      top: 50%; }
+  .react-root .resizable__sections {
+    overflow: auto; }
+  .react-root .resizable--resizing {
+    user-select: none; }
+.react-root .hv-resizable {
+  display: flex;
+  flex: 0 0 auto;
+  height: 100%;
+  width: 100%; }
+  @media screen and (max-width: 768px) {
+    .react-root .hv-resizable {
+      touch-action: none; } }
+  .react-root .hv-resizable--vertical {
+    flex-direction: column; }
+  .react-root .hv-resizable__section {
+    position: relative;
+    display: flex;
+    flex: 0 0 auto;
+    overflow: hidden; }
+    .react-root .hv-resizable__section--vertical {
+      flex-direction: column; }
+  .react-root .hv-resizable__divider {
+    align-items: center;
+    justify-content: center;
+    transition: all 200ms ease-in-out;
+    overflow: hidden;
+    font-size: 0.8rem; }
+    .react-root .hv-resizable__divider--is-absolute {
+      position: absolute;
+      opacity: 0; }
+    .react-root .hv-resizable__divider--vertical {
+      display: flex;
+      cursor: ns-resize;
+      width: 100%;
+      height: 0.5rem;
+      bottom: 0; }
+      .react-root .hv-resizable__divider--vertical:hover, .react-root .hv-resizable__divider--vertical:focus, .react-root .hv-resizable__divider--vertical:active {
+        background-color: #e7f3ff;
+        height: 1rem;
+        opacity: 1; }
+    .react-root .hv-resizable__divider--horizontal {
+      display: flex;
+      flex-direction: column;
+      cursor: ew-resize;
+      height: 100%;
+      right: 0;
+      width: 0.5rem; }
+      .react-root .hv-resizable__divider--horizontal:hover, .react-root .hv-resizable__divider--horizontal:focus, .react-root .hv-resizable__divider--horizontal:active {
+        background-color: #e7f3ff;
+        width: 1rem;
+        opacity: 1; }
+.react-root .scratch-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .react-root .scratch-card__container {
+    background-color: #ffffff;
+    border: solid 0.1rem #afc0d5;
+    border-radius: 0.5rem;
+    height: 17rem;
+    width: 32rem;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto; }
+  .react-root .scratch-card__icontainer {
+    height: 6rem;
+    width: 6rem;
+    position: relative;
+    background-color: #0f8cff;
+    border-radius: 50%; }
+  .react-root .scratch-card__img {
+    height: 4rem;
+    width: 4rem;
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    transform: translate(-50%, -50%); }
+  .react-root .scratch-card__text {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center; }
+    .react-root .scratch-card__text--highlight {
+      width: 100%;
+      background-color: #f2f3f3; }
+.react-root .segmented-control {
+  display: inline-flex;
+  justify-content: center;
+  align-items: stretch;
+  padding: 0.1rem;
+  border: 0.1rem solid #d6d6d6;
+  border-radius: 1.2rem; }
+.react-root .segmented-control-option {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  outline: none !important;
+  box-shadow: none !important;
+  padding: 1rem 2rem;
+  border-radius: 1.2rem;
+  font-size: 1.6rem;
+  flex: 1 0 auto; }
+  .react-root .segmented-control-option:hover {
+    color: #1a84ff; }
+  .react-root .segmented-control-option--active {
+    background-color: #1a84ff;
+    color: #ffffff; }
+    .react-root .segmented-control-option--active:hover {
+      color: #ffffff !important; }
+.react-root .select {
+  cursor: pointer; }
+  .react-root .select__arrow {
+    display: inline-flex;
+    padding: 0.5rem;
+    flex: 0 0 auto; }
+    .react-root .select__arrow--open {
+      transform: rotate(180deg); }
+  .react-root .select__title {
+    display: flex;
+    width: 100%;
+    border-radius: 0.4rem;
+    border: 0.2rem solid #d6d6d6;
+    user-select: none;
+    align-items: center; }
+    .react-root .select__title--open {
+      border-color: #1a84ff; }
+  .react-root .select__title-left {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 0;
+    flex: 1 0 0; }
+  .react-root .select__value {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+    padding: 0.5rem;
+    outline-color: transparent; }
+    .react-root .select__value--hidden {
+      display: none; }
+  .react-root .select__multi-value {
+    display: flex;
+    margin: 0.1rem;
+    align-items: center; }
+  .react-root .select__multi-text {
+    padding: 0.5rem;
+    background-color: #3492ff;
+    color: #ffffff;
+    border-top-left-radius: 0.4rem;
+    border-bottom-left-radius: 0.4rem; }
+  .react-root .select__multi-cross {
+    padding: 0.5rem;
+    background-color: #1a84ff;
+    color: #ffffff;
+    border-top-right-radius: 0.4rem;
+    border-bottom-right-radius: 0.4rem;
+    margin-right: 0.1rem; }
+  .react-root .select__placeholder {
+    color: #828282;
+    width: 100%;
+    padding: 0.5rem;
+    outline-color: transparent; }
+    .react-root .select__placeholder--hidden {
+      display: none; }
+  .react-root .select__input {
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    outline-color: transparent;
+    flex: 1;
+    min-width: 20rem; }
+    .react-root .select__input--hidden {
+      display: none; }
+  .react-root .select__popover {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    border-radius: 0.4rem;
+    border: 0.1rem solid #d6d6d6;
+    max-height: 20rem;
+    cursor: pointer; }
+  .react-root .select__option-empty {
+    padding: 0.5rem;
+    text-align: center; }
+  .react-root .select__option {
+    width: 100%;
+    padding: 0.5rem; }
+    .react-root .select__option:hover {
+      background-color: rgba(1, 1, 1, 0.05);
+      color: unset; }
+    .react-root .select__option--active {
+      background-color: rgba(1, 1, 1, 0.05); }
+    .react-root .select__option--selected {
+      background-color: #1a84ff;
+      color: #ffffff; }
+  .react-root .select--compact .select__title {
+    background-color: #f5faff;
+    border: none; }
+  .react-root .select--compact .select__value {
+    padding: 0.8rem; }
+  .react-root .select--disabled {
+    pointer-events: none;
+    opacity: 0.7;
+    filter: grayscale(0.5); }
+.react-root .share-medium {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  align-items: center;
+  margin: 0.3rem; }
+  .react-root .share-medium__icon img {
+    width: 2.5rem;
+    vertical-align: bottom; }
+  .react-root .share-medium__icon-Whatsapp {
+    width: 3rem !important; }
+.react-root .share-popover {
+  width: 35rem; }
+  .react-root .share-popover__share-via {
+    display: flex;
+    align-items: center;
+    margin: 0.5rem;
+    color: #4e5f72; }
+  .react-root .share-popover__copied-container {
+    display: flex;
+    align-items: center;
+    margin: 0 0.5rem; }
+  .react-root .share-popover__copied-icon {
+    background-color: #d6edde;
+    border-radius: 3rem;
+    padding: 0.3rem;
+    color: #49ad6e; }
+  .react-root .share-popover__copied-text {
+    margin-left: 0.5rem;
+    font-style: italic;
+    font-size: 1.4rem;
+    color: #49ad6e; }
+  .react-root .share-popover__link-container {
+    display: flex;
+    align-items: center;
+    margin: 0.5rem;
+    padding: 1rem;
+    border-radius: 0.3rem;
+    border: solid 0.1rem #7c97aa; }
+  .react-root .share-popover__link {
+    margin-right: 1.5rem;
+    font-size: 1.4rem;
+    text-overflow: ellipsis;
+    overflow-x: hidden; }
+  .react-root .share-popover__copy-icon-btn {
+    margin-left: auto; }
+    .react-root .share-popover__copy-icon-btn:hover {
+      background-color: inherit; }
+  .react-root .share-popover__copy-icon {
+    color: #1a84ff;
+    font-size: 1.6rem; }
+  .react-root .share-popover__media-map {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+.react-root .sr-slider {
+  position: relative;
+  justify-content: center;
+  cursor: pointer;
+  /* stylelint-disable-next-line */ }
+  .react-root .sr-slider__track {
+    position: relative;
+    background-color: #999999;
+    border-radius: 1rem;
+    overflow: hidden; }
+  .react-root .sr-slider__progress {
+    position: absolute;
+    background-color: #1a84ff; }
+  .react-root .sr-slider__tooltip {
+    position: absolute;
+    background-color: rgba(1, 1, 1, 0.7);
+    border-radius: 0.4rem;
+    color: #ffffff;
+    padding: 0.2rem 0.5rem;
+    display: none; }
+  .react-root .sr-slider__handle {
+    position: absolute;
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 0.8rem;
+    background-color: #1a84ff; }
+  .react-root .sr-slider--horizontal {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 1.6rem; }
+    .react-root .sr-slider--horizontal .sr-slider__track {
+      width: 100%;
+      height: 40%; }
+    .react-root .sr-slider--horizontal .sr-slider__progress {
+      height: 100%;
+      left: 0; }
+    .react-root .sr-slider--horizontal .sr-slider__handle {
+      top: 50%;
+      transform: translate(-50%, -50%); }
+    .react-root .sr-slider--horizontal .sr-slider__tooltip {
+      bottom: calc(100% + 0.5rem);
+      left: 50%;
+      transform: translateX(-50%); }
+  .react-root .sr-slider--vertical {
+    display: flex;
+    height: 100%;
+    width: 1.6rem; }
+    .react-root .sr-slider--vertical .sr-slider__track {
+      height: 100%;
+      width: 40%; }
+    .react-root .sr-slider--vertical .sr-slider__progress {
+      width: 100%;
+      bottom: 0; }
+    .react-root .sr-slider--vertical .sr-slider__handle {
+      left: 50%;
+      transform: translate(-50%, 50%); }
+    .react-root .sr-slider--vertical .sr-slider__tooltip {
+      right: calc(100% + 0.5rem);
+      top: 50%;
+      transform: translateY(-50%); }
+  .react-root .sr-slider--dragging .sr-slider__tooltip {
+    display: block; }
+  .react-root .sr-slider--disabled-controls {
+    cursor: default; }
+  .react-root .sr-slider__handle:hover .sr-slider__tooltip {
+    display: block; }
+.react-root .sidebar {
+  position: sticky;
+  display: flex;
+  top: 0;
+  flex-direction: column; }
+  .react-root .sidebar__content {
+    overflow-y: scroll; }
+  .react-root .sidebar__header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.1rem solid rgba(0, 0, 0, 0.12);
+    padding: 1.5rem; }
+    .react-root .sidebar__header:hover {
+      color: #515151;
+      background-color: #f0f0f0; }
+  .react-root .sidebar__header-text {
+    font-size: 1.2rem;
+    font-weight: 600; }
+  .react-root .sidebar__item {
+    display: flex;
+    border-bottom: 0.1rem solid rgba(0, 0, 0, 0.12);
+    padding: 2rem 1rem;
+    height: 7.5rem;
+    align-items: center; }
+    .react-root .sidebar__item--active {
+      background-color: #ffffff;
+      color: #1a84ff; }
+    .react-root .sidebar__item:hover {
+      color: #515151;
+      background-color: #f0f0f0; }
+  .react-root .sidebar__item-icon {
+    font-size: 2.4rem;
+    display: inline-flex;
+    border-radius: 50%;
+    background-color: #ffffff;
+    box-shadow: 0 0 0.1rem rgba(0, 0, 0, 0.1);
+    padding: 0.6rem;
+    position: relative; }
+  .react-root .sidebar__item-text {
+    flex: 1 0 0;
+    font-size: 1.8rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center; }
+    .react-root .sidebar__item-text--new:after {
+      content: "new";
+      border-radius: 1rem;
+      font-size: 1.2rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: #ffffff;
+      padding: 0.1rem 0.5rem;
+      background-color: #ffae42;
+      margin-left: 1rem; }
+  .react-root .sidebar--collapsed {
+    flex: 0; }
+  .react-root .sidebar__open {
+    height: 100vh;
+    width: 24rem; }
+    .react-root .sidebar__open .sidebar__item-text, .react-root .sidebar__open .sidebar__header-text {
+      display: block; }
+  .react-root .sidebar__close {
+    height: 100vh;
+    width: 6rem; }
+    .react-root .sidebar__close .sidebar__item-text, .react-root .sidebar__close .sidebar__header-text {
+      display: none; }
+    .react-root .sidebar__close .sidebar__arrow {
+      transform: rotate(180deg); }
+.react-root .sidebar__open, .react-root .sidebar__open *, .react-root .sidebar__close, .react-root .sidebar__close * {
+  transition: all 0.5s ease-in-out; }
+@media screen and (max-width: 768px) {
+  .react-root .dashboard {
+    overflow-y: auto; }
+  .react-root .sidebar__header {
+    border-bottom: none; }
+  .react-root .sidebar__open {
+    width: 100%; }
+    .react-root .sidebar__open .sidebar__arrow {
+      transform: rotate(180deg); }
+  .react-root .sidebar__close {
+    height: 4.5rem;
+    width: 100%; }
+    .react-root .sidebar__close .sidebar__arrow {
+      transform: rotate(0deg); }
+    .react-root .sidebar__close .sidebar__item-text, .react-root .sidebar__close .sidebar__header-text {
+      display: block; } }
+@media screen and (max-width: 480px) {
+  .react-root .sidebar__open {
+    height: 100%; } }
+.react-root .skeleton {
+  background-image: linear-gradient(to right, #f6f7f8 0%, #e8eaed 20%, #f6f7f8 40%, #f6f7f8 100%);
+  background-color: #f6f7f8;
+  background-repeat: no-repeat;
+  background-size: 90rem 100rem;
+  animation: shimmer 720ms linear infinite;
+  animation-fill-mode: forwards;
+  border-radius: 0.4rem; }
+  .react-root .skeleton--circle {
+    border-radius: 50%; }
+  .react-root .skeleton--no-animation {
+    background-image: none; }
+.react-root .snackbar {
+  display: flex;
+  box-shadow: rgba(0, 0, 0, 0.1) 0.1rem 0.2rem 0.2rem 0.1rem;
+  align-items: center;
+  position: fixed;
+  justify-content: space-between;
+  color: #ffffff;
+  width: calc(100% - 2rem);
+  max-width: 36rem;
+  border-radius: 0.4rem;
+  padding: 1rem;
+  z-index: 98;
+  /* State modifiers */
+  /* Position modifiers */ }
+  .react-root .snackbar__message {
+    margin: 0;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+  .react-root .snackbar--light {
+    background-color: #ffffff;
+    color: #515151; }
+  .react-root .snackbar--dark {
+    background-color: #515151; }
+  .react-root .snackbar--success {
+    background-color: #4bca5e; }
+  .react-root .snackbar--error {
+    background-color: #ff001f; }
+  .react-root .snackbar--warning {
+    background-color: #ffae42; }
+  .react-root .snackbar--info {
+    background-color: #006eee; }
+  .react-root .snackbar--top-right {
+    top: 2rem;
+    right: 2rem; }
+  .react-root .snackbar--bottom-right {
+    bottom: 2rem;
+    right: 2rem; }
+  .react-root .snackbar--top-left {
+    top: 2rem;
+    left: 2rem; }
+  .react-root .snackbar--bottom-left {
+    bottom: 2rem;
+    left: 2rem; }
+.react-root .status-tag-2 {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border-radius: 0.4rem;
+  font-weight: 600;
+  font-size: 1.4rem; }
+  .react-root .status-tag-2__icon--left {
+    margin-right: 0.5rem; }
+  .react-root .status-tag-2__icon--right {
+    margin-left: 0.5rem; }
+  .react-root .status-tag-2--small {
+    font-size: 1.2rem; }
+  .react-root .status-tag-2--attention {
+    color: #e23f5b;
+    background-color: #fcebee; }
+  .react-root .status-tag-2--default {
+    color: #515151;
+    background-color: #d6d6d6; }
+  .react-root .status-tag-2--success {
+    color: #2eb676;
+    background-color: #eaf7f1; }
+  .react-root .status-tag-2--warning {
+    color: #b99839;
+    background-color: #fcefc9; }
+.react-root .stat-icon {
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+  .react-root .stat-icon__icon {
+    height: 4.5rem;
+    margin: 1rem;
+    margin-left: 0; }
+  .react-root .stat-icon__title {
+    font-size: 2rem;
+    font-weight: 400;
+    color: #828282; }
+  .react-root .stat-icon__body {
+    color: #828282;
+    font-size: 2rem;
+    font-weight: 400; }
+  .react-root .stat-icon__value {
+    font-size: 2.4rem;
+    color: #000000;
+    font-weight: 600; }
+.react-root .stepper {
+  display: flex;
+  align-items: center; }
+  .react-root .stepper__divider {
+    padding: 0 2rem; }
+    .react-root .stepper__divider i {
+      font-size: 2rem; }
+.react-root .stepper-item {
+  display: flex;
+  color: #000000;
+  cursor: pointer;
+  text-transform: uppercase; }
+  .react-root .stepper-item:hover {
+    color: #3492ff; }
+  .react-root .stepper-item--locked {
+    color: #828282;
+    cursor: default; }
+    .react-root .stepper-item--locked:hover {
+      color: #828282; }
+  .react-root .stepper-item--active {
+    font-weight: 600;
+    color: #1a84ff; }
+.react-root .suggestion {
+  background-color: #f7fff8;
+  border-color: #d6e9dc; }
+  .react-root .suggestion a {
+    color: #0076ff; }
+  .react-root .suggestion ul {
+    margin: 0;
+    list-style-type: disc; }
+.react-root .svg-mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99; }
+  .react-root .svg-mask--empty {
+    background-color: rgba(1, 1, 1, 0.7); }
+.react-root .switch {
+  position: relative;
+  display: inline-flex;
+  overflow: hidden; }
+  .react-root .switch input {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    margin: 0; }
+  .react-root .switch__track {
+    background-color: #e5e5e5;
+    width: 100%;
+    height: 100%;
+    transition: 180ms; }
+  .react-root .switch__thumb {
+    background-color: #ffffff;
+    transition: 180ms;
+    transform: translateX(0);
+    will-change: transform; }
+  .react-root .switch--checked .switch__track {
+    background-color: #1a84ff; }
+  .react-root .switch--checked .switch__thumb {
+    transform: translateX(100%); }
+  .react-root .switch--disabled {
+    opacity: 0.5; }
+    .react-root .switch--disabled input {
+      cursor: unset; }
+    .react-root .switch--disabled .switch__thumb {
+      background-color: #f8f8f8; }
+  .react-root .switch--default {
+    width: 5.2rem;
+    height: 3rem;
+    border-radius: 1.5rem; }
+    .react-root .switch--default .switch__track {
+      border-radius: 1.5rem;
+      padding: 0.4rem; }
+    .react-root .switch--default .switch__thumb {
+      width: 2.2rem;
+      height: 2.2rem;
+      border-radius: 1.1rem; }
+  .react-root .switch--small {
+    width: 3.8rem;
+    height: 2.2rem;
+    border-radius: 1.1rem; }
+    .react-root .switch--small .switch__track {
+      border-radius: 1.5rem;
+      padding: 0.3rem; }
+    .react-root .switch--small .switch__thumb {
+      width: 1.6rem;
+      height: 1.6rem;
+      border-radius: 0.8rem; }
+.react-root .switch-row {
+  display: flex;
+  align-items: center;
+  cursor: pointer; }
+  .react-root .switch-row__content {
+    flex: 1 0 0;
+    margin-right: 1rem; }
+  .react-root .switch-row__control {
+    flex: 0 0 auto; }
+.react-root .table {
+  width: 100%;
+  border: 0.1rem solid #d6d6d6;
+  border-collapse: collapse;
+  border-spacing: 0; }
+  .react-root .table__row {
+    border-bottom: 0.1rem solid #d6d6d6; }
+  .react-root .table__head {
+    vertical-align: middle;
+    background-color: #f5f5f5;
+    padding: 2rem;
+    text-align: left;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.4rem; }
+  .react-root .table__data {
+    vertical-align: middle;
+    padding: 2rem;
+    font-weight: 600; }
+  .react-root .table__decider {
+    background-color: #f5f5f5; }
+.react-root .tabs {
+  display: flex;
+  flex-direction: column; }
+  .react-root .tabs__header {
+    display: flex; }
+  .react-root .tabs__tab {
+    display: flex;
+    padding: 1rem 2rem;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer; }
+    .react-root .tabs__tab--active {
+      box-shadow: 0 -0.6rem 0 0 #1a84ff inset; }
+      .react-root .tabs__tab--active:hover {
+        box-shadow: 0 -0.6rem 0 0 #3492ff inset; }
+    .react-root .tabs__tab--disabled {
+      cursor: not-allowed; }
+    .react-root .tabs__tab--right-aligned {
+      margin-left: auto; }
+.react-root .timeline__header {
+  color: #f5a623;
+  margin-left: -1rem; }
+.react-root .timeline__children {
+  display: flex; }
+  .react-root .timeline__children:before {
+    content: '';
+    background-color: #d6d6d6;
+    width: 0.2rem; }
+.react-root .timeline__content {
+  width: 100%; }
+.react-root .toast {
+  position: fixed;
+  padding: 1rem 2rem;
+  border-radius: 0.4rem;
+  z-index: 98; }
+  .react-root .toast__message {
+    margin: 0;
+    overflow: hidden; }
+  .react-root .toast__icon {
+    margin-right: 1rem;
+    width: 2rem;
+    height: 2rem; }
+  .react-root .toast--top-center {
+    top: 2rem;
+    left: 50%;
+    transform: translateX(-50%); }
+  .react-root .toast--top-right {
+    top: 2rem;
+    right: 2rem;
+    transition: transform 0.6s ease-in-out; }
+  .react-root .toast--bottom-right {
+    bottom: 2rem;
+    right: 2rem;
+    transition: transform 0.6s ease-in-out; }
+  .react-root .toast--top-left {
+    top: 2rem;
+    left: 2rem;
+    transition: transform 0.6s ease-in-out; }
+  .react-root .toast--bottom-center {
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%); }
+  .react-root .toast--bottom-left {
+    bottom: 2rem;
+    left: 2rem;
+    transition: transform 0.6s ease-in-out; }
+  .react-root .toast--info {
+    background-color: #006eee;
+    color: #ffffff; }
+  .react-root .toast--error {
+    background-color: #ff001f;
+    color: #ffffff; }
+  .react-root .toast--success {
+    background-color: #39c24e;
+    color: #ffffff; }
+  .react-root .toast--warning {
+    background-color: #ffae42;
+    color: #ffffff; }
+.react-root .tooltip {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.7);
+  box-shadow: none;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  font-size: 1.4rem; }
+.react-root .tour-guide-slide {
+  box-shadow: rgba(0, 0, 0, 0.1) 0.1rem 0.2rem 0.2rem 0.1rem;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  max-width: 32rem;
+  border-radius: 0.4rem;
+  background-color: #1a84ff;
+  color: #ffffff;
+  padding: 1rem; }
+  .react-root .tour-guide-slide__control {
+    flex: 0 0 auto; }
+    .react-root .tour-guide-slide__control--disabled {
+      opacity: 0.5;
+      cursor: default;
+      pointer-events: none; }
+  .react-root .tour-guide-slide__content {
+    flex: 1 0 0;
+    padding: 0 1rem; }
+  .react-root .tour-guide-slide--animated {
+    transition: 180ms; }
+.react-root .triangle {
+  box-shadow: rgba(0, 0, 0, 0.1) 0.1rem 0.2rem 0.2rem 0.1rem;
+  position: absolute;
+  width: 0;
+  height: 0;
+  background-color: #ffffff;
+  transform: rotate(45deg);
+  transform-origin: center; }
+  .react-root .triangle--center.triangle--left, .react-root .triangle--center.triangle--right {
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg); }
+  .react-root .triangle--center.triangle--top, .react-root .triangle--center.triangle--bottom {
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg); }
+  .react-root .triangle--bottom {
+    box-shadow: rgba(0, 0, 0, 0.1) 0.2rem 0.2rem 0.3rem 0; }
+  .react-root .triangle--top {
+    box-shadow: rgba(0, 0, 0, 0.1) -0.2rem -0.2rem 0.3rem 0; }
+  .react-root .triangle--left {
+    box-shadow: rgba(0, 0, 0, 0.1) -0.2rem 0.2rem 0.3rem 0; }
+  .react-root .triangle--right {
+    box-shadow: rgba(0, 0, 0, 0.1) 0.2rem -0.2rem 0.3rem 0; }
+.react-root .triangle-container {
+  position: relative; }
+.react-root [class^="icon-"],
+.react-root [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "SR Icons" !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+.react-root .icon-double-refresh:before {
+  content: "\e9d2"; }
+.react-root .icon-double-check:before {
+  content: "\e9d3"; }
+.react-root .icon-calender:before {
+  content: "\e9ce"; }
+.react-root .icon-speedometer:before {
+  content: "\e9cf"; }
+.react-root .icon-star-leaderboard:before {
+  content: "\e9d0"; }
+.react-root .icon-op-dynamics:before {
+  content: "\e9d1"; }
+.react-root .icon-discussion:before {
+  content: "\e9cd"; }
+.react-root .icon-heart:before {
+  content: "\e9cb"; }
+.react-root .icon-reply:before {
+  content: "\e9cc"; }
+.react-root .icon-chat-support:before {
+  content: "\e901"; }
+.react-root .icon-hamburger:before {
+  content: "\e900"; }
+.react-root .icon-curriculum:before {
+  content: "\e9c7"; }
+.react-root .icon-resume:before {
+  content: "\e9c6"; }
+.react-root .icon-connect-now:before {
+  content: "\e9b7"; }
+.react-root .icon-pillow:before {
+  content: "\e9b8"; }
+.react-root .icon-candidate:before {
+  content: "\e9b9"; }
+.react-root .icon-badge:before {
+  content: "\e9bd"; }
+.react-root .icon-placeholder:before {
+  content: "\e9be"; }
+.react-root .icon-x-mark:before {
+  content: "\e9bf"; }
+.react-root .icon-bookmark-white:before {
+  content: "\e9c0"; }
+.react-root .icon-focus:before {
+  content: "\e9c1"; }
+.react-root .icon-candidates:before {
+  content: "\e9c3"; }
+.react-root .icon-email-filled:before {
+  content: "\e9c4"; }
+.react-root .icon-create-job:before {
+  content: "\e9c5"; }
+.react-root .icon-network-speed:before {
+  content: "\e9c9"; }
+.react-root .icon-text-color:before {
+  content: "\e9b5"; }
+.react-root .icon-font-size:before {
+  content: "\e9b6"; }
+.react-root .icon-streak:before {
+  content: "\e918"; }
+.react-root .icon-pool-candidates:before {
+  content: "\e9c8"; }
+.react-root .icon-playlist:before {
+  content: "\e902"; }
+.react-root .icon-play-button:before {
+  content: "\e9b3"; }
+.react-root .icon-home-new:before {
+  content: "\e99a"; }
+.react-root .icon-all-classes-new:before {
+  content: "\e99b"; }
+.react-root .icon-all-problems-new:before {
+  content: "\e99c"; }
+.react-root .icon-classroom-new:before {
+  content: "\e99d"; }
+.react-root .icon-help-new:before {
+  content: "\e99e"; }
+.react-root .icon-help-requests-new:before {
+  content: "\e99f"; }
+.react-root .icon-invite-earn-new:before {
+  content: "\e9a0"; }
+.react-root .icon-job-tracker-new:before {
+  content: "\e9a1"; }
+.react-root .icon-leaderboard-new:before {
+  content: "\e9a2"; }
+.react-root .icon-mentor-new:before {
+  content: "\e9a3"; }
+.react-root .icon-mock-interview-new:before {
+  content: "\e9a5"; }
+.react-root .icon-refgraph-new:before {
+  content: "\e9a6"; }
+.react-root .icon-ta-new:before {
+  content: "\e9a7"; }
+.react-root .icon-board-teacher:before {
+  content: "\e903"; }
+.react-root .icon-video-add:before {
+  content: "\e904"; }
+.react-root .icon-error:before {
+  content: "\e997"; }
+.react-root .icon-bulb:before {
+  content: "\e905"; }
+.react-root .icon-like:before {
+  content: "\e913"; }
+.react-root .icon-share:before {
+  content: "\e991"; }
+.react-root .icon-filter-alt:before {
+  content: "\e906"; }
+.react-root .icon-keyboard:before {
+  content: "\e907"; }
+.react-root .icon-zoom-in:before {
+  content: "\e992"; }
+.react-root .icon-zoom-out:before {
+  content: "\e993"; }
+.react-root .icon-clipboard:before {
+  content: "\e98b"; }
+.react-root .icon-diagram:before {
+  content: "\e98c"; }
+.react-root .icon-education:before {
+  content: "\e98d"; }
+.react-root .icon-feedback:before {
+  content: "\e98e"; }
+.react-root .icon-report:before {
+  content: "\e98f"; }
+.react-root .icon-poll:before {
+  content: "\e98a"; }
+.react-root .icon-pop-out:before {
+  content: "\e92a"; }
+.react-root .icon-pop-in:before {
+  content: "\e988"; }
+.react-root .icon-puzzle:before {
+  content: "\e987"; }
+.react-root .icon-duplicate:before {
+  content: "\e908"; }
+.react-root .icon-copy:before {
+  content: "\e909"; }
+.react-root .icon-bars:before {
+  content: "\e984"; }
+.react-root .icon-check:before {
+  content: "\e90a"; }
+.react-root .icon-eye-off:before {
+  content: "\e90b"; }
+.react-root .icon-eye:before {
+  content: "\e90c"; }
+.react-root .icon-trash:before {
+  content: "\e90d"; }
+.react-root .icon-block:before {
+  content: "\e90e"; }
+.react-root .icon-minimize-variant:before {
+  content: "\e90f"; }
+.react-root .icon-maximize-variant:before {
+  content: "\e910"; }
+.react-root .icon-settings:before {
+  content: "\e911"; }
+.react-root .icon-chat:before {
+  content: "\e912"; }
+.react-root .icon-swap-role:before {
+  content: "\e914"; }
+.react-root .icon-group:before {
+  content: "\e915"; }
+.react-root .icon-payment:before {
+  content: "\e916"; }
+.react-root .icon-mic:before {
+  content: "\e96c"; }
+.react-root .icon-share-screen:before {
+  content: "\e96d"; }
+.react-root .icon-share-screen-off:before {
+  content: "\e96e"; }
+.react-root .icon-screen-pause:before {
+  content: "\e917"; }
+.react-root .icon-camera-off:before {
+  content: "\e96f"; }
+.react-root .icon-mic-off:before {
+  content: "\e970"; }
+.react-root .icon-edit-outline:before {
+  content: "\e971"; }
+.react-root .icon-return:before {
+  content: "\e972"; }
+.react-root .icon-maximize-screen:before {
+  content: "\e973"; }
+.react-root .icon-camera:before {
+  content: "\e974"; }
+.react-root .icon-star:before {
+  content: "\e975"; }
+.react-root .icon-profile-circle:before {
+  content: "\e976"; }
+.react-root .icon-question-fill:before {
+  content: "\e977"; }
+.react-root .icon-chat1:before {
+  content: "\e978"; }
+.react-root .icon-swap:before {
+  content: "\e919"; }
+.react-root .icon-add:before {
+  content: "\e91a"; }
+.react-root .icon-edit-variant:before {
+  content: "\e93d"; }
+.react-root .icon-enter:before {
+  content: "\e964"; }
+.react-root .icon-exit:before {
+  content: "\e965"; }
+.react-root .icon-hand:before {
+  content: "\e952"; }
+.react-root .icon-call-end:before {
+  content: "\e953"; }
+.react-root .icon-fullscreen-exit:before {
+  content: "\e954"; }
+.react-root .icon-fullscreen:before {
+  content: "\e955"; }
+.react-root .icon-bookmark:before {
+  content: "\e956"; }
+.react-root .icon-folder-outline:before {
+  content: "\e957"; }
+.react-root .icon-pencil:before {
+  content: "\e958"; }
+.react-root .icon-unlock:before {
+  content: "\e95a"; }
+.react-root .icon-code:before {
+  content: "\e959"; }
+.react-root .icon-italic:before {
+  content: "\e95b"; }
+.react-root .icon-strike:before {
+  content: "\e95c"; }
+.react-root .icon-underline:before {
+  content: "\e95d"; }
+.react-root .icon-ordered-list:before {
+  content: "\e95e"; }
+.react-root .icon-unordered-list:before {
+  content: "\e95f"; }
+.react-root .icon-block-quote:before {
+  content: "\e960"; }
+.react-root .icon-code-block:before {
+  content: "\e961"; }
+.react-root .icon-eraser:before {
+  content: "\e962"; }
+.react-root .icon-bold:before {
+  content: "\e963"; }
+.react-root .icon-thunder:before {
+  content: "\e968"; }
+.react-root .icon-sort-asc:before {
+  content: "\e969"; }
+.react-root .icon-sort-desc:before {
+  content: "\e96a"; }
+.react-root .icon-sort:before {
+  content: "\e979"; }
+.react-root .icon-filter:before {
+  content: "\e97a"; }
+.react-root .icon-bookmark-outline:before {
+  content: "\e97b"; }
+.react-root .icon-next:before {
+  content: "\e925"; }
+.react-root .icon-refresh:before {
+  content: "\e930"; }
+.react-root .icon-folder:before {
+  content: "\e93e"; }
+.react-root .icon-link:before {
+  content: "\e93f"; }
+.react-root .icon-calendar-variant:before {
+  content: "\e93b"; }
+.react-root .icon-list:before {
+  content: "\e93c"; }
+.react-root .icon-tick:before {
+  content: "\e938"; }
+.react-root .icon-clock:before {
+  content: "\e939"; }
+.react-root .icon-student:before {
+  content: "\e931"; }
+.react-root .icon-calendar:before {
+  content: "\e932"; }
+.react-root .icon-search:before {
+  content: "\e980"; }
+.react-root .icon-star-profile:before {
+  content: "\e995"; }
+.react-root .icon-trophy:before {
+  content: "\e996"; }
+.react-root .icon-add-note:before {
+  content: "\e9ab"; }
+.react-root .icon-trash-note:before {
+  content: "\e9ac"; }
+.react-root .icon-note-pen:before {
+  content: "\e9a9"; }
+.react-root .icon-file-link:before {
+  content: "\e9a8"; }
+.react-root .icon-notebook:before {
+  content: "\e9aa"; }
+.react-root .icon-notebook-plus:before {
+  content: "\e9ae"; }
+.react-root .icon-note-plus:before {
+  content: "\e9ad"; }
+.react-root .icon-pin:before {
+  content: "\e9af"; }
+.react-root .icon-pin-outline:before {
+  content: "\e9b0"; }
+.react-root .icon-tag-outline:before {
+  content: "\e9b1"; }
+.react-root .icon-volume-high:before {
+  content: "\e91b"; }
+.react-root .icon-volume-off:before {
+  content: "\e91c"; }
+.react-root .icon-volume-low:before {
+  content: "\e91d"; }
+.react-root .icon-volume-medium:before {
+  content: "\e91e"; }
+.react-root .icon-pause:before {
+  content: "\e91f"; }
+.react-root .icon-play:before {
+  content: "\e920"; }
+.react-root .icon-rewind:before {
+  content: "\e921"; }
+.react-root .icon-forward:before {
+  content: "\e922"; }
+.react-root .icon-screen:before {
+  content: "\e935"; }
+.react-root .icon-warning:before {
+  content: "\e93a"; }
+.react-root .icon-classroom:before {
+  content: "\e924"; }
+.react-root .icon-book:before {
+  content: "\e926"; }
+.react-root .icon-coding:before {
+  content: "\e927"; }
+.react-root .icon-refer:before {
+  content: "\e928"; }
+.react-root .icon-question:before {
+  content: "\e929"; }
+.react-root .icon-help:before {
+  content: "\e989"; }
+.react-root .icon-cup:before {
+  content: "\e92c"; }
+.react-root .icon-people:before {
+  content: "\e92d"; }
+.react-root .icon-two-person:before {
+  content: "\e92e"; }
+.react-root .icon-todos:before {
+  content: "\e92f"; }
+.react-root .icon-maximize:before {
+  content: "\e923"; }
+.react-root .icon-minimize:before {
+  content: "\e92b"; }
+.react-root .icon-dot:before {
+  content: "\e933"; }
+.react-root .icon-circle:before {
+  content: "\e934"; }
+.react-root .icon-send:before {
+  content: "\e936"; }
+.react-root .icon-info:before {
+  content: "\e937"; }
+.react-root .icon-emoji:before {
+  content: "\e940"; }
+.react-root .icon-external-link:before {
+  content: "\e941"; }
+.react-root .icon-bell-off:before {
+  content: "\e942"; }
+.react-root .icon-bell:before {
+  content: "\e943"; }
+.react-root .icon-arrow-down:before {
+  content: "\e944"; }
+.react-root .icon-arrow-up:before {
+  content: "\e945"; }
+.react-root .icon-arrow-right:before {
+  content: "\e946"; }
+.react-root .icon-arrow-left:before {
+  content: "\e947"; }
+.react-root .icon-chevron-up:before {
+  content: "\e948"; }
+.react-root .icon-chevron-right:before {
+  content: "\e949"; }
+.react-root .icon-chevron-left:before {
+  content: "\e94a"; }
+.react-root .icon-chevron-down:before {
+  content: "\e94b"; }
+.react-root .icon-image:before {
+  content: "\e94c"; }
+.react-root .icon-photo:before {
+  content: "\e94c"; }
+.react-root .icon-file-pdf:before {
+  content: "\e94d"; }
+.react-root .icon-file-video:before {
+  content: "\e94e"; }
+.react-root .icon-file-audio:before {
+  content: "\e94f"; }
+.react-root .icon-file-sheet:before {
+  content: "\e950"; }
+.react-root .icon-file-document:before {
+  content: "\e951"; }
+.react-root .icon-file:before {
+  content: "\e966"; }
+.react-root .icon-file-code:before {
+  content: "\e967"; }
+.react-root .icon-file-compressed:before {
+  content: "\e96b"; }
+.react-root .icon-person-plus:before {
+  content: "\e97c"; }
+.react-root .icon-person:before {
+  content: "\e97d"; }
+.react-root .icon-clear:before {
+  content: "\e97e"; }
+.react-root .icon-close:before {
+  content: "\e97e"; }
+.react-root .icon-public:before {
+  content: "\e97f"; }
+.react-root .icon-lock-outline:before {
+  content: "\e981"; }
+.react-root .icon-lock:before {
+  content: "\e982"; }
+.react-root .icon-https:before {
+  content: "\e982"; }
+.react-root .icon-attach:before {
+  content: "\e983"; }
+.react-root .icon-plus-circle:before {
+  content: "\e985"; }
+.react-root .icon-minus-circle:before {
+  content: "\e986"; }
+.react-root .icon-attach-variant:before {
+  content: "\e990"; }
+.react-root .icon-gps:before {
+  content: "\e994"; }
+.react-root .icon-geolocator:before {
+  content: "\e994"; }
+.react-root .icon-leaderboard:before {
+  content: "\e998"; }
+.react-root .icon-account:before {
+  content: "\e999"; }
+.react-root .icon-hands:before {
+  content: "\e9a4"; }
+.react-root .icon-more-vert:before {
+  content: "\e9b2"; }
+.react-root .icon-check-circle:before {
+  content: "\e9b4"; }
+.react-root .icon-hour-glass:before {
+  content: "\e9ba"; }
+.react-root .icon-edit:before {
+  content: "\e9bb"; }
+.react-root .icon-money:before {
+  content: "\e9bc"; }
+.react-root .icon-calendar1:before {
+  content: "\e9c2"; }
+.react-root .icon-tick-circle:before {
+  content: "\e9ca"; }
+.react-root .l-cricket-ball {
+  padding: 1rem; }
+  .react-root .l-cricket-ball__img {
+    width: 15rem;
+    height: 15rem;
+    object-fit: contain;
+    object-position: center; }
+  .react-root .l-cricket-ball--small .l-cricket-ball__img {
+    width: 8rem;
+    height: 8rem; }
+.react-root .l-logo-spinner {
+  position: relative; }
+  .react-root .l-logo-spinner__spinner {
+    border: 0.2rem solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 0.2rem solid #3498db;
+    background-color: transparent;
+    width: 10rem;
+    height: 10rem;
+    animation: spin 2s linear infinite; }
+    @media screen and (max-width: 480px) {
+      .react-root .l-logo-spinner__spinner {
+        width: 5rem;
+        height: 5rem; } }
+  .react-root .l-logo-spinner__logo {
+    position: absolute;
+    height: 4rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    @media screen and (max-width: 480px) {
+      .react-root .l-logo-spinner__logo {
+        height: 2rem; } }
+  .react-root .l-logo-spinner--small .l-logo-spinner__spinner {
+    width: 5rem;
+    height: 5rem; }
+  .react-root .l-logo-spinner--small .l-logo-spinner__logo {
+    height: 2rem; }
+.react-root .admin-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  cursor: pointer;
+  padding: 2rem;
+  border-radius: 0.4rem;
+  color: #ffffff;
+  width: 30rem;
+  overflow: hidden; }
+  .react-root .admin-tile__title {
+    margin-bottom: 1rem;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; }
+  .react-root .admin-tile__body {
+    font-size: 3.2rem;
+    font-weight: 600; }
+  .react-root .admin-tile:nth-child(1n) {
+    background-color: #c3422a; }
+  .react-root .admin-tile:nth-child(2n) {
+    background-color: #a5cc70; }
+  .react-root .admin-tile:nth-child(3n) {
+    background-color: #2b7264; }
+  .react-root .admin-tile:nth-child(4n) {
+    background-color: #ccbc70; }
+  .react-root .admin-tile:nth-child(5n) {
+    background-color: #2a4bc3; }
+  .react-root .admin-tile:nth-child(6n) {
+    background-color: #ff9671; }
+.react-root .admin-tile-row {
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+  margin: 0.5rem; }
+  .react-root .admin-tile-row .admin-tile {
+    margin: 0.5rem; }
+.react-root .form-group {
+  border: 0.1rem solid #d6d6d6;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-bottom: 2rem; }
+  .react-root .form-group__warning {
+    padding: 1rem 2rem;
+    border-radius: 3rem;
+    background-color: #fcd04d;
+    margin-bottom: 2rem;
+    text-align: center;
+    display: inline-block;
+    font-weight: bold; }
+.react-root .form-group-label {
+  position: relative;
+  top: -2rem;
+  left: 0.5rem;
+  background: #ffffff;
+  display: inline-block;
+  padding: 0 0.5rem;
+  color: #828282; }
+.react-root .form-group-content {
+  padding: 0 1rem; }
+.react-root .m-ribbon {
+  position: fixed;
+  z-index: 9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  width: 100%; }
+  @media screen and (max-width: 768px) {
+    .react-root .m-ribbon {
+      padding: 1rem 5rem 1rem 1rem; } }
+  @media screen and (max-width: 480px) {
+    .react-root .m-ribbon {
+      padding: 1rem 4rem 1rem 1rem; } }
+  .react-root .m-ribbon__close {
+    color: #c9e4ff;
+    font-size: 1.6rem;
+    position: absolute;
+    right: 2rem;
+    display: inline-block;
+    cursor: pointer; }
+    @media screen and (max-width: 480px) {
+      .react-root .m-ribbon__close {
+        right: 1rem; } }
+  .react-root .m-ribbon--default {
+    background-color: #57abff; }
+
+/*# sourceMappingURL=scaler.css.map */

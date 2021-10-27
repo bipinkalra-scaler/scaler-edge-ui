@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32.8" height="32.8" viewBox="0 0 32.8 32.8">
+    <defs>
+        <style>
+            .cls-2{fill:#fff}
+        </style>
+    </defs>
+    <g id="Group" transform="translate(1 3)">
+        <g id="Group-18" transform="rotate(90 14.9 14.9)">
+            <circle id="Oval" cx="15.4" cy="15.4" r="15.4" fill="#d37489" stroke="#fdd6df" stroke-width="2px" transform="translate(-2 -1)"/>
+            <g id="target" transform="rotate(-90 12.4 10.4)">
+                <path id="Path" d="M15.1 8.032L13.535 9.6a7.571 7.571 0 0 1 .2 1.471 5.885 5.885 0 1 1-5.888-5.884 6.673 6.673 0 0 1 1.471.2l1.569-1.569a7.641 7.641 0 0 0-3.041-.588 7.847 7.847 0 1 0 7.847 7.847 7.641 7.641 0 0 0-.593-3.045z" class="cls-2" transform="translate(0 .698)"/>
+                <path id="Shape" d="M15 3.923V0l-2.947 2.942v2.55L9.111 8.435a3.537 3.537 0 0 0-1.962-.588 3.923 3.923 0 1 0 3.923 3.923 3.537 3.537 0 0 0-.588-1.962l2.942-2.942h2.55l2.942-2.942zm-7.851 9.809a1.962 1.962 0 0 1 0-3.923.884.884 0 0 1 .49.1l-1.177 1.174a.971.971 0 1 0 1.373 1.373l1.177-1.177a.884.884 0 0 1 .1.49 1.967 1.967 0 0 1-1.963 1.963z" class="cls-2" transform="translate(.698)"/>
+            </g>
+        </g>
+    </g>
+</svg>

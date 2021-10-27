@@ -1,0 +1,641 @@
+// Color Palletes
+
+$blue-light: #e7f3ff;
+$blue-med: #cce6ff;
+$blue-dark: #2a69d3;
+$blue-gradient: linear-gradient(106deg, #67a4f7 3%, #316ee2 85%);
+
+$green-light: #e1f8f2;
+$green-med: #bfe6dc;
+$green-dark: #52a37f;
+$green-gradient: linear-gradient(106deg, #75c9c3 3%, #65b170 85%);
+
+$purple-light: #eff2ff;
+$purple-med: #d8dffc;
+$purple-dark: #6a82dd;
+$purple-gradient: linear-gradient(106deg, #9d7de3 3%, #72a6ed 85%);
+
+$pink-light: #fff0f3;
+$pink-med: #ffd8de;
+$pink-dark: #c9657b;
+$pink-gradient: linear-gradient(271deg, #db91c7 101%, #e27b71 0%);
+
+$text-primary: #25333f;
+$text-secondary: #5b6f81;
+$text-tertiary: #6c7b88;
+
+$solid-color-list: (
+  "blue-light": $blue-light,
+  "blue-med": $blue-med,
+  "blue-dark": $blue-dark,
+  "green-light": $green-light,
+  "green-med": $green-med,
+  "green-dark": $green-dark,
+  "purple-light": $purple-light,
+  "purple-med": $purple-med,
+  "purple-dark": $purple-dark,
+  "pink-light": $pink-light,
+  "pink-med": $pink-med,
+  "pink-dark": $pink-dark,
+  "text-primary": $text-primary,
+  "text-secondary": $text-secondary,
+  "text-tertiary": $text-tertiary,
+);
+
+$gradient-color-list: (
+  "blue-gradient": $blue-gradient,
+  "green-gradient": $green-gradient,
+  "purple-gradient": $purple-gradient,
+  "pink-gradient": $pink-gradient,
+);
+
+// TEXT SOLIDS
+@each $abbrev, $color in $solid-color-list {
+  .text-#{$abbrev} {
+    color: $color !important;
+  }
+}
+
+// TEXT GRADIENTS
+@each $abbrev, $color in $gradient-color-list {
+  .text-gradient-#{$abbrev} {
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: $color;
+  }
+}
+
+// BACKGROUND SOLIDS
+@each $abbrev, $color in $solid-color-list {
+  .bg-#{$abbrev} {
+    background-color: $color !important;
+  }
+}
+
+// BACKGROUND GRADIENTS
+@each $abbrev, $color in $gradient-color-list {
+  .bg-gradient-#{$abbrev} {
+    background: $color;
+  }
+}
+
+// HTML Font Size -> root for all rem values
+
+html {
+  font-size: 14px;
+  font-family: "Source Sans Pro", sans-serif !important;
+  color: $text-primary;
+}
+
+// Font Classes
+
+$font-1: 0.875rem; // 12px
+$font-2: 1rem; // 14px
+$font-3: 1.143rem; // 16px
+$font-4: 1.286rem; // 18px
+
+$heading-6: 1.428rem; // 20px
+$heading-5: 1.713rem; // 24px
+$heading-4: 2rem; // 28px
+$heading-3: 2.286rem; // 32px
+$heading-2: 2.571rem; // 36px
+$heading-1: 2.857rem; // 40px
+
+$text-size-list: (
+  "font-1": $font-1,
+  "font-2": $font-2,
+  "font-3": $font-3,
+  "font-4": $font-4,
+  "heading-6": $heading-6,
+  "heading-5": $heading-5,
+  "heading-4": $heading-4,
+  "heading-3": $heading-3,
+  "heading-2": $heading-2,
+  "heading-1": $heading-1,
+);
+
+@each $type, $size in $text-size-list {
+  .#{$type} {
+    font-size: $size !important;
+  }
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.semi-bold {
+  font-weight: 600;
+}
+
+// CSS for components
+
+.wrapper {
+  max-width: 1500px;
+  margin: 0 auto;
+  font-family: "Source Sans Pro", sans-serif !important;
+}
+
+.main-title,
+.main-sub-title {
+  margin-bottom: 20px;
+  color: $text-primary;
+}
+
+.track-cards-container {
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.track-card {
+  border-radius: 5px;
+  position: relative;
+  cursor: pointer;
+
+  &__active-tick {
+    display: none;
+    position: absolute;
+    height: 38px;
+    width: 38px;
+    border-radius: 50%;
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.32);
+    background-color: #47d38d;
+    top: -13px;
+    right: -13px;
+  }
+
+  &__top-section {
+    padding: 15px 20px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+    &__logo {
+      margin-right: 10px;
+    }
+  }
+
+  &__bottom-section {
+    padding: 10px 20px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+  &.theme-purple {
+    .track-card__top-section {
+      background-color: $purple-light;
+    }
+
+    .track-card__bottom-section {
+      background-color: $purple-med;
+    }
+  }
+
+  &.theme-green {
+    .track-card__top-section {
+      background-color: $green-light;
+    }
+
+    .track-card__bottom-section {
+      background-color: $green-med;
+    }
+  }
+
+  &.theme-pink {
+    .track-card__top-section {
+      background-color: $pink-light;
+    }
+
+    .track-card__bottom-section {
+      background-color: $pink-med;
+    }
+  }
+
+  &.theme-blue {
+    .track-card__top-section {
+      background-color: $blue-light;
+    }
+
+    .track-card__bottom-section {
+      background-color: $blue-med;
+    }
+  }
+}
+
+.track-card--active {
+  color: white;
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.32);
+
+  .track-card__active-tick {
+    display: block;
+  }
+
+  &.theme-purple {
+    .track-card__top-section {
+      background: $purple-gradient;
+    }
+
+    .track-card__bottom-section {
+      background-color: $purple-dark;
+    }
+  }
+
+  &.theme-green {
+    .track-card__top-section {
+      background: $green-gradient;
+    }
+
+    .track-card__bottom-section {
+      background-color: $green-dark;
+    }
+  }
+
+  &.theme-pink {
+    .track-card__top-section {
+      background: $pink-gradient;
+    }
+
+    .track-card__bottom-section {
+      background-color: $pink-dark;
+    }
+  }
+
+  &.theme-blue {
+    .track-card__top-section {
+      background: $blue-gradient;
+    }
+
+    .track-card__bottom-section {
+      background-color: $blue-dark;
+    }
+  }
+}
+
+.module-section-wrapper {
+  border-left: dashed 1px $pink-dark;
+  padding-left: 32px;
+  margin-top: 30px;
+  margin-left: 12px;
+}
+
+.module-section {
+  margin-bottom: 35px;
+
+  &__title-row {
+    position: relative;
+    height: 30px;
+    margin-bottom: 15px;
+
+    &__logo {
+      position: absolute;
+      left: -47px;
+      height: 30px;
+      width: 30px;
+    }
+
+    &__text {
+      &__time-marker {
+        margin: 0 10px 0 5px;
+        background-color: $pink-med;
+        color: $pink-dark;
+        border-radius: 20px;
+        padding: 4px 10px;
+      }
+    }
+  }
+
+  &__contents {
+    align-items: flex-start;
+  }
+
+  .topics-card {
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 3px 11px 0 rgba(0, 0, 0, 0.14);
+
+    &--highlighted {
+      .topics-card__top-section {
+        color: white !important;
+      }
+    }
+
+    &__top-section {
+      text-align: center;
+
+      &__head {
+        padding: 16px;
+      }
+
+      &__subhead {
+        padding: 2px 16px;
+      }
+    }
+
+    &__bottom-section {
+      padding: 15px 10px;
+
+      &__topic {
+        margin-bottom: 10px;
+        img {
+          margin-right: 8px;
+        }
+      }
+    }
+  }
+
+  .career-tracks-card {
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 3px 11px 0 rgba(0, 0, 0, 0.14);
+    cursor: pointer;
+
+    &__top-section {
+      justify-content: space-between;
+      padding: 15px 20px;
+
+      &__selection-icon {
+        height: 30px;
+        width: 30px;
+        border: solid 2px $text-secondary;
+        background: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 3px;
+        box-sizing: border-box;
+        border-radius: 50%;
+
+        .green {
+          display: none;
+        }
+      }
+    }
+
+    &__bottom-section {
+      padding: 20px;
+    }
+
+    &--selected {
+      .career-tracks-card__top-section {
+        &__selection-icon {
+          border: solid 2px #64d854 !important;
+
+          .green {
+            display: block;
+            background: #64d854;
+            border-radius: 50%;
+            height: 20px;
+            width: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  &.theme-pink {
+    .topics-card {
+      border: solid 1px $pink-dark;
+
+      &__top-section {
+        &__head {
+          background: $pink-light;
+        }
+
+        &__subhead {
+          background: $pink-med;
+          color: $pink-dark;
+        }
+      }
+
+      &.topics-card--highlighted {
+        .topics-card__top-section {
+          &__head {
+            background: $pink-gradient;
+          }
+
+          &__subhead {
+            background: $pink-dark;
+            color: white;
+          }
+        }
+      }
+    }
+
+    .career-tracks-card {
+      &__top-section {
+        background: $pink-light;
+
+        &__selection-icon {
+          border: solid 2px $pink-dark;
+        }
+      }
+
+      &--selected {
+        .career-tracks-card__top-section {
+          background: $pink-gradient;
+          color: white;
+        }
+      }
+    }
+  }
+
+  &.theme-green {
+    .topics-card {
+      border: solid 1px $green-dark;
+
+      &__top-section {
+        &__head {
+          background: $green-light;
+        }
+
+        &__subhead {
+          background: $green-med;
+          color: $green-dark;
+        }
+      }
+
+      &.topics-card--highlighted {
+        .topics-card__top-section {
+          &__head {
+            background: $green-gradient;
+          }
+
+          &__subhead {
+            background: $green-dark;
+            color: white;
+          }
+        }
+      }
+    }
+
+    .career-tracks-card {
+      &__top-section {
+        background: $green-light;
+
+        &__selection-icon {
+          border: solid 2px $green-dark;
+        }
+      }
+
+      &--selected {
+        .career-tracks-card__top-section {
+          background: $green-gradient;
+          color: white;
+        }
+      }
+    }
+  }
+
+  &.theme-blue {
+    .topics-card {
+      border: solid 1px $blue-dark;
+
+      &__top-section {
+        &__head {
+          background: $blue-light;
+        }
+
+        &__subhead {
+          background: $blue-med;
+          color: $blue-dark;
+        }
+      }
+
+      &.topics-card--highlighted {
+        .topics-card__top-section {
+          &__head {
+            background: $blue-gradient;
+          }
+
+          &__subhead {
+            background: $blue-dark;
+            color: white;
+          }
+        }
+      }
+    }
+
+    .career-tracks-card {
+      &__top-section {
+        background: $blue-light;
+
+        &__selection-icon {
+          border: solid 2px $blue-dark;
+        }
+      }
+
+      &--selected {
+        .career-tracks-card__top-section {
+          background: $blue-gradient;
+          color: white;
+        }
+      }
+    }
+  }
+
+  &.theme-purple {
+    .topics-card {
+      border: solid 1px $purple-dark;
+
+      &__top-section {
+        &__head {
+          background: $purple-light;
+        }
+
+        &__subhead {
+          background: $purple-med;
+          color: $purple-dark;
+        }
+      }
+
+      &.topics-card--highlighted {
+        .topics-card__top-section {
+          &__head {
+            background: $purple-gradient;
+          }
+
+          &__subhead {
+            background: $purple-dark;
+            color: white;
+          }
+        }
+      }
+    }
+
+    .career-tracks-card {
+      &__top-section {
+        background: $purple-light;
+
+        &__selection-icon {
+          border: solid 2px $purple-dark;
+        }
+      }
+
+      &--selected {
+        .career-tracks-card__top-section {
+          background: $purple-gradient;
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+// Flex Properties
+
+.row {
+  display: flex;
+  flex-wrap: nowrap;
+
+  .flex-child {
+    margin: 0 8px;
+    flex: 1;
+
+    &:first-child {
+      margin-left: unset !important;
+    }
+
+    &:last-child {
+      margin-right: unset !important;
+    }
+  }
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+// Media Queries
+
+@media screen and (max-width: 1199px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  html {
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  html {
+    font-size: 10px;
+  }
+}

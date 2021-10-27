@@ -1,0 +1,38 @@
+$pagination-btn-height: 4rem;
+$pagination-btn-width: 4rem;
+
+.pagination {
+  @include flex-row;
+  @include justify-c;
+
+  align-items: stretch;
+
+  &__btn {
+    padding: 0.5rem;
+    background-color: $light-grey-color;
+    margin-right: 1rem;
+    border-radius: 0.5rem;
+    width: $pagination-btn-width;
+    height: $pagination-btn-height;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:hover, &--active {
+      background-color: $primary-color;
+      color: $light-font-color;
+    }
+
+    &--disabled {
+      background-color: $grey-color;
+      pointer-events: none;
+      cursor: not-allowed;
+    }
+
+    &--prev, &--next {
+      color: $primary-color;
+      font-size: $h3-size;
+    }
+  }
+}
